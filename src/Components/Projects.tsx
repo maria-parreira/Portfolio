@@ -14,7 +14,7 @@ const projects: Project[] = [
 
 const Projects: React.FC = () => {
     return (
-        <section id="projects">
+        <section id="Projects">
             <h2>Projects</h2>
             <div>
                 {projects.map((project, index) => (

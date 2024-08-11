@@ -4,7 +4,7 @@ const skills: string[] = ['JavaScript', 'React', 'TypeScript', 'CSS'];
 
 const Skills: React.FC = () => {
     return (
-        <section id="skills">
+        <section id="Skills">
             <h2>Skills</h2>
             <ul>
                 {skills.map((skill, index) => (
