@@ -1,0 +1,108 @@
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+    --light-text-color: #7f8c8d;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+
+}
+
+/* Estilo para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+/* Seções */
+section {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: 1200px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+/* Aplicar margens específicas apenas na primeira seção */
+section.first-section {
+    margin-top: 100px;
+    background-image: url('../assets/home.png'); /* Substitua pelo caminho da sua imagem */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    background-color: var(--accent-color);
+}

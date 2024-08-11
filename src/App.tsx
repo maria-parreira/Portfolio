@@ -7,20 +7,22 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-
+import './styles/Global.css';
 const App: React.FC = () => {
     return (
         <div>
-            <Header />
-            <Aboutme />
-            <Education />
-            <Skills />
-            <Projects />
-            <Experience />
-            <Resume />
-            <Footer />
+            <Header/>
+            <div className="first-section">
+                <Aboutme/>
+            </div>
+                <Education/>
+                <Skills/>
+                <Projects/>
+                <Experience/>
+                <Resume/>
+                <Footer/>
         </div>
-    );
+);
 };
 
 export default App;
