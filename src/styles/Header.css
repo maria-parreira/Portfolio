@@ -1,8 +1,8 @@
 header {
     width: 100%; /* Garante que o header ocupe 100% da largura da tela */
     height: 60px; /* Ajuste a altura conforme necessário */
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: peachpuff;
+    color: olivedrab;
     display: flex;
     justify-content: space-between; /* Espaço entre título e navegação */
     align-items: center; /* Centraliza verticalmente */
@@ -17,7 +17,7 @@ header {
 
 header h1 {
     font-size: 16px;
-    color: #fff;
+    color: olivedrab;
     margin: 0px;
     text-transform: uppercase;
     font-weight: 600;
@@ -42,14 +42,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: olivedrab;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
     margin-right: 30px;
     align-content: center;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #ecf0f1;
+    color: peachpuff;
 }
