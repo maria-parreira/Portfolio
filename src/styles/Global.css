@@ -1,7 +1,7 @@
 
 :root {
     --primary-color: #3498db;
-    --secondary-color: #2c3e50;
+    --secondary-color: black;
     --accent-color: #e74c3c;
     --background-color: #ecf0f1;
     --text-color: #333;
@@ -73,11 +73,7 @@ section {
 /* Aplicar margens específicas apenas na primeira seção */
 section.first-section {
     margin-top: 100px;
-    background-image: url('../assets/home.png'); /* Substitua pelo caminho da sua imagem */
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
+
 }
 
 section:hover {

@@ -1,0 +1,121 @@
+/* Container do componente de Educação */
+#Education {
+    padding: 20px; /* Espaçamento interno ao redor do conteúdo */
+    background-color: #f5f5f5; /* Cor de fundo clara para a seção */
+    border-radius: 8px; /* Bordas arredondadas para a seção */
+    width: 100%;
+    height: 80vh;
+}
+
+/* Estilo do título principal da seção */
+h2 {
+    text-align: left; /* Alinhamento centralizado do texto */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Contêiner da linha do tempo */
+.timeline {
+    position: relative; /* Para posicionar a linha central em relação a este contêiner */
+    max-width: 900px; /* Largura máxima da linha do tempo */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px 0; /* Espaçamento interno na parte superior e inferior */
+}
+
+/* Linha central da linha do tempo */
+.timeline::before {
+    content: ''; /* Nenhum conteúdo, apenas para a linha */
+    position: absolute; /* Posiciona a linha em relação ao contêiner pai */
+    width: 4px; /* Largura da linha */
+    background-color: #007BFF; /* Cor da linha central */
+    top: 0; /* Alinha no topo do contêiner */
+    height: 65vh; /* Define a altura da linha como 50% da altura da viewport */
+    left: 50%; /* Centraliza a linha horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição da linha para que fique centralizada */
+}
+
+/* Item da linha do tempo */
+.timeline-item {
+    position: relative; /* Para posicionar os marcadores e ajustar o layout */
+    width: 47%; /* Largura dos itens da linha do tempo */
+    padding: 20px; /* Espaçamento interno dentro dos itens */
+    background-color: #fff; /* Cor de fundo dos itens */
+    border-radius: 8px; /* Bordas arredondadas para os itens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para adicionar profundidade */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada item */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Marcador dos itens da linha do tempo */
+.timeline-item::before {
+    content: ''; /* Nenhum conteúdo, apenas para o marcador */
+    position: absolute; /* Posiciona o marcador em relação ao item */
+    width: 20px; /* Largura do marcador */
+    height: 20px; /* Altura do marcador */
+    border-radius: 50%; /* Forma o marcador como um círculo */
+    background-color: #007BFF; /* Cor do marcador */
+    transform: translateX(-50%); /* Ajusta a posição do marcador para centralizar */
+    top: 50%; /* Alinha verticalmente o marcador no meio do item */
+    z-index: 1; /* Garante que o marcador esteja acima do conteúdo */
+}
+
+/* Alterna os itens da linha do tempo para a esquerda e para a direita */
+.timeline-item:nth-child(odd) {
+    float: left; /* Alinha os itens ímpares à direita da linha central */
+    clear: both; /* Garante que os itens não se sobreponham */
+}
+
+.timeline-item:nth-child(even) {
+    float: right; /* Alinha os itens pares à esquerda da linha central */
+    clear: both; /* Garante que os itens não se sobreponham */
+}
+
+/* Ajusta a posição dos itens em relação à linha central */
+.timeline-item:nth-child(odd)::before {
+    right: -47px; /* Posiciona o marcador fora da borda direita do item */
+    left: auto; /* Remove o alinhamento à esquerda */
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -27px; /* Posiciona o marcador fora da borda esquerda do item */
+    right: auto; /* Remove o alinhamento à direita */
+}
+
+/* Estilo dos títulos dentro dos itens da linha do tempo */
+.timeline-item h3 {
+    margin: 0; /* Remove margens padrão */
+    color: #007BFF; /* Cor do título do grau */
+}
+
+/* Estilo do subtítulo da instituição dentro dos itens da linha do tempo */
+.timeline-item h4 {
+    margin: 5px 0; /* Espaçamento acima e abaixo do subtítulo */
+    color: #555; /* Cor do texto da instituição */
+}
+
+/* Estilo dos parágrafos dentro dos itens da linha do tempo */
+.timeline-item p {
+    margin: 0; /* Remove margens padrão */
+    color: #666; /* Cor do texto da descrição */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .timeline {
+        padding: 10px; /* Reduz o espaçamento interno para telas pequenas */
+        border-left: none; /* Remove a linha vertical para dispositivos móveis */
+        position: relative; /* Garante que a linha do tempo ocupe toda a largura */
+    }
+
+    .timeline-item {
+        width: 100%; /* Ajusta a largura dos itens para ocupar toda a largura disponível */
+        float: none; /* Remove a flutuação para itens em telas pequenas */
+        clear: both; /* Remove o efeito de sobreposição */
+        margin-bottom: 30px; /* Espaçamento adicional abaixo dos itens para melhor visualização */
+    }
+
+    .timeline-item::before {
+        left: 50%; /* Ajusta o marcador para centralizar em telas pequenas */
+        transform: translateX(-50%); /* Ajusta a posição para centralizar */
+    }
+}

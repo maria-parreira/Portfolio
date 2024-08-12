@@ -1,6 +1,6 @@
 import React from 'react';
 
-const skills: string[] = ['JavaScript', 'React', 'TypeScript', 'CSS'];
+const skills: string[] = ['Java','JavaScript', 'React', 'TypeScript', 'CSS'];
 
 const Skills: React.FC = () => {
     return (

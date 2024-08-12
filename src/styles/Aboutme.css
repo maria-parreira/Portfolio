@@ -1,0 +1,41 @@
+#Aboutme {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../assets/home1.png');
+    background-size: 500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+}
+
+/* Estilo do título */
+#Aboutme h2 {
+    font-size: 2rem; /* Tamanho do texto do título */
+    color: #333; /* Cor do título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo do contêiner do parágrafo */
+.about {
+    max-width: 400px; /* Define a largura máxima para o parágrafo */
+    text-align: justify; /* Garante que o texto esteja alinhado à esquerda */
+}
+
+/* Estilo do parágrafo */
+.about p {
+    color: #000; /* Cor preta para o texto */
+    font-size: 0.9rem; /* Tamanho menor para o texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 15px; /* Espaço entre parágrafos */
+}
+
+/* Remove o espaço após o último parágrafo */
+.about p:last-child {
+    margin-bottom: 0; /* Remove a margem inferior do último parágrafo */
+}
+
+.about p.last{
+    font-weight: bold;
+}
+
