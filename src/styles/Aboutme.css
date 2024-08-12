@@ -1,32 +1,34 @@
 #Aboutme {
     width: 100%;
-    height: 80vh;
+    height: 66vh;
     background-image: url('../assets/home1.png');
     background-size: 500px;
+    border-image-width: 10px;
     background-position: right;
     background-repeat: no-repeat;
-    padding: 20px;
-    color: white;
 }
 
 /* Estilo do título */
 #Aboutme h2 {
     font-size: 2rem; /* Tamanho do texto do título */
-    color: #333; /* Cor do título */
-    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    color: orange; /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    margin-left: 10px;
+    margin-top: 0px;
 }
 
 /* Estilo do contêiner do parágrafo */
 .about {
     max-width: 400px; /* Define a largura máxima para o parágrafo */
     text-align: justify; /* Garante que o texto esteja alinhado à esquerda */
+    margin-left: 10px;
+
 }
 
 /* Estilo do parágrafo */
 .about p {
     color: #000; /* Cor preta para o texto */
-    font-size: 0.9rem; /* Tamanho menor para o texto */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    font-size: small; /* Tamanho menor para o texto */
     margin-bottom: 15px; /* Espaço entre parágrafos */
 }
 
@@ -38,4 +40,5 @@
 .about p.last{
     font-weight: bold;
 }
+
 

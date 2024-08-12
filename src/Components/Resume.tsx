@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../assets/CV.pdf'; // Importa o PDF
 
 const Resume: React.FC = () => {
     return (
@@ -7,7 +8,7 @@ const Resume: React.FC = () => {
             <p>
                 For a detailed overview of my professional background, skills, and experiences, please download my resume using the link below:
             </p>
-            <a href="/path-to-your-resume.pdf" download="Maria_Parreira_Resume.pdf" className="resume-link">
+            <a href={resume} download="Maria_Parreira_Resume.pdf" className="resume-link">
                 Download Resume
             </a>
         </section>
