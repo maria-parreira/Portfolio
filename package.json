@@ -1,5 +1,5 @@
 {
-  "homepage": "https://maria-parreira.github.io/portfolio/",
+  "homepage": "https://maria-parreira.github.io/Portfolio/",
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -18,6 +18,7 @@
     "@eslint/js": "^9.8.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.0",
