@@ -4,7 +4,7 @@ import '../styles/Aboutme.css'
 const About: React.FC = () => {
     return (
         <section id="Aboutme">
-                <h2>About Me</h2>
+                <h2>How am I ?</h2>
             <div className="about">
                 <p>
                     👋😄 Hi, I’m Maria Parreira, a Software Developer based in Porto with roots in Évora, Portugal. I’m

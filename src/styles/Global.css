@@ -20,17 +20,19 @@ body {
     margin: 0;
 }
 
-header, footer {
+header {
     background: #fff; /* Cor de fundo do cabeçalho e rodapé */
     border-bottom: 1px solid #ddd; /* Borda inferior do cabeçalho */
     padding: 20px;
     text-align: center;
 }
 
+
 footer {
-    border-top: 1px solid #ddd; /* Borda superior do rodapé */
     border-bottom: none; /* Remove a borda inferior do rodapé */
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .first-section {
@@ -73,5 +75,3 @@ button {
 button:hover {
     background: #0056b3; /* Cor de fundo dos botões ao passar o mouse */
 }
-
-/* Outros estilos específicos podem ser adicionados conforme necessário */

@@ -1,0 +1,67 @@
+/* styles/Header.css */
+
+header {
+    position: fixed; /* Mantém o header fixo na tela */
+    top: 0; /* Alinha o header ao topo da página */
+    left: 0; /* Alinha o header ao lado esquerdo da página */
+    width: 250px; /* Largura fixa para o header */
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    background: #f8f9fa; /* Cor de fundo suave para o header */
+    border-right: 1px solid #e0e0e0; /* Linha divisória à direita */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra à direita do header */
+    display: flex; /* Usa flexbox para o layout interno */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno do header */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    z-index: 1000; /* Mantém o header acima de outros elementos */
+}
+
+header h1 {
+    font-size: 1.8rem; /* Tamanho do texto do título */
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+}
+
+header nav ul li {
+    margin-bottom: 1px; /* Espaçamento abaixo de cada item */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #007BFF; /* Cor dos links */
+    font-size: 12px; /* Tamanho da fonte dos links */
+    transition: color 0.3s; /* Transição suave para a cor dos links */
+}
+
+header nav ul li a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 200px; /* Ajusta a largura para telas menores */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Ajusta o tamanho do título em telas menores */
+    }
+
+    header nav ul li a {
+        font-size: 1rem; /* Ajusta o tamanho da fonte dos links em telas menores */
+    }
+}
+
+.intro-image {
+    width: 150px; /* Largura da imagem ajustada para ser menor */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 1px solid #007BFF; /* Adiciona uma borda ao redor da imagem */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}

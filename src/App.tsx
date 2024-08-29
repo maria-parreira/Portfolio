@@ -7,12 +7,14 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import Introduction from './components/Introduction.tsx';
 import './styles/Global.css';
 
 const App: React.FC = () => {
     return (
         <div>
             <Header/>
+                <Introduction/>
                 <About/>
                 <Education/>
                 <Skills/>

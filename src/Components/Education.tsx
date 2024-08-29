@@ -19,7 +19,7 @@ const Education: React.FC = () => {
 
     return (
         <section id="Education">
-            <h2>Education</h2>
+            <h2>My journey</h2>
             <div className="timeline">
                 {educationList.map((edu, index) => (
                     <div key={index} className="timeline-item">
