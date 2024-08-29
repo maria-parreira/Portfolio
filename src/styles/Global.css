@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: peachpuff;
     --secondary-color: black;
@@ -25,12 +24,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-sizing: border-box; /* Garantir que padding e border sejam incluídos no tamanho dos elementos */
 }
 
 /* Estilo para cabeçalhos */
 h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    line-height: 1.2; /* Melhor espaçamento entre linhas para cabeçalhos */
 }
 
 /* Links */
@@ -59,6 +60,7 @@ button {
 button:hover {
     background-color: var(--accent-color);
 }
+
 /* Seções */
 section {
     background-color: rgba(255, 255, 255, 0.7);
@@ -70,12 +72,12 @@ section {
     width: 100%;
     transition: transform 0.3s ease;
     margin-bottom: 40px;
+    box-sizing: border-box;
 }
 
 /* Aplicar margens específicas apenas na primeira seção */
 section.first-section {
     margin-top: 100px;
-
 }
 
 section:hover {
@@ -103,4 +105,51 @@ li a {
 
 li a:hover {
     background-color: var(--accent-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Ajuste do padding-top para dispositivos móveis */
+        background-attachment: scroll; /* Melhora a performance em dispositivos móveis */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.5rem; /* Tamanho ajustado dos cabeçalhos em telas menores */
+    }
+
+    section {
+        padding: 15px; /* Reduz o padding das seções em dispositivos móveis */
+        margin: 15px 0; /* Reduz as margens para seções em dispositivos móveis */
+        margin-bottom: 30px;
+    }
+
+    button {
+        font-size: 14px; /* Reduz o tamanho da fonte do botão em telas menores */
+        padding: 8px 16px; /* Ajusta o padding dos botões em dispositivos móveis */
+    }
+
+    li a {
+        padding: 8px 12px; /* Ajusta o padding das listas em dispositivos móveis */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.25rem; /* Tamanho ainda menor dos cabeçalhos para telas muito pequenas */
+    }
+
+    section {
+        padding: 10px; /* Mais redução de padding em dispositivos muito pequenos */
+        margin: 10px 0; /* Reduz ainda mais as margens das seções */
+    }
+
+    button {
+        font-size: 12px; /* Fontes menores nos botões para dispositivos muito pequenos */
+        padding: 6px 12px; /* Ajusta ainda mais o padding dos botões */
+    }
+
+    li a {
+        padding: 6px 10px; /* Ajusta o padding das listas para telas muito pequenas */
+    }
 }

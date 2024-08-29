@@ -1,7 +1,6 @@
 #Aboutme {
     width: 100%;
     height: 66vh;
-    background-image: url('../assets/home1.png');
     background-size: 500px;
     border-image-width: 10px;
     background-position: right;
@@ -19,9 +18,8 @@
 
 /* Estilo do contêiner do parágrafo */
 .about {
-    max-width: 400px; /* Define a largura máxima para o parágrafo */
+    max-width: 800px; /* Define a largura máxima para o parágrafo */
     text-align: justify; /* Garante que o texto esteja alinhado à esquerda */
-    margin-left: 10px;
 
 }
 

@@ -3,17 +3,21 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box; /* Garante que padding seja incluído na largura */
 }
 
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms, transform 300ms ease-in-out;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05); /* Adiciona um pequeno zoom ao passar o mouse */
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -35,8 +39,49 @@
 
 .card {
   padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease;
+  margin: 1rem 0; /* Margem para espaçamento entre cartões */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Levanta o cartão ao passar o mouse */
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem; /* Reduz o padding para dispositivos móveis */
+  }
+
+  .logo {
+    height: 4em; /* Reduz o tamanho da logo em telas menores */
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1.5em; /* Reduz o padding do cartão em dispositivos móveis */
+    margin: 0.5rem 0; /* Menor margem para cartões em telas pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 3em; /* Tamanho ainda menor da logo em telas muito pequenas */
+    padding: 0.5em;
+  }
+
+  .card {
+    padding: 1em; /* Mais redução de padding em dispositivos muito pequenos */
+  }
+
+  .read-the-docs {
+    font-size: 0.875rem; /* Texto menor para melhor adaptação em telas pequenas */
+  }
 }

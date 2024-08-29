@@ -54,3 +54,27 @@ nav ul li a {
 nav ul li a:hover {
     color: peachpuff;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Permite que o header se ajuste conforme o conteúdo */
+        padding: 0px; /* Reduz o padding para telas menores */
+    }
+
+    header h1 {
+        font-size: 14px; /* Reduz o tamanho do título em telas menores */
+        text-align: center;
+        margin-bottom: 10px; /* Adiciona espaço abaixo do título para evitar sobreposição */
+        flex: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    nav {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Reduz o tamanho dos links em telas menores */
+        margin-right: 10px; /* Diminui o espaço entre os links */
+    }
+}

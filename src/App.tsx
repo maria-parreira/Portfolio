@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import './styles/Global.css';
+
 const App: React.FC = () => {
     return (
         <div>
