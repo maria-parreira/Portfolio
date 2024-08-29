@@ -1,5 +1,6 @@
 import React from 'react';
-import resume from '../assets/CV.pdf'; // Importa o PDF
+import resume from '../assets/CV.pdf';
+import '../styles/Resume.css';
 
 const Resume: React.FC = () => {
     return (

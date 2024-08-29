@@ -1,0 +1,65 @@
+/* styles/Projects.css */
+
+section#Projects {
+    background: #f9f9f9; /* Cor de fundo suave para a seção */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 30px; /* Espaçamento abaixo da seção */
+    max-width: 900px; /* Largura máxima ajustada */
+    margin: 30px auto; /* Centraliza a seção */
+}
+
+section#Projects h2 {
+    color: #333; /* Cor do título */
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens envolvam para a linha seguinte */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os cartões */
+}
+
+.project-card {
+    background: #fff; /* Cor de fundo do cartão */
+    border-radius: 8px; /* Cantos arredondados do cartão */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil do cartão */
+    padding: 20px; /* Espaçamento interno do cartão */
+    width: 300px; /* Largura do cartão */
+    display: flex; /* Usa flexbox para o layout interno */
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.project-card h3 {
+    color: #222; /* Cor do título do projeto */
+    font-size: 1.5rem; /* Tamanho da fonte do título do projeto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título do projeto */
+}
+
+.project-card p {
+    color: #666; /* Cor da descrição do projeto */
+    font-size: 1rem; /* Tamanho da fonte da descrição do projeto */
+    margin-bottom: 20px; /* Espaçamento abaixo da descrição do projeto */
+}
+
+.project-card a {
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Negrito para o link */
+}
+
+.project-card a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse sobre o link */
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Ajusta a largura dos cartões para a largura total em telas pequenas */
+        max-width: 500px; /* Define uma largura máxima para cartões em telas pequenas */
+    }
+}

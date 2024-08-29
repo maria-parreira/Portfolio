@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/Projects.css';
 interface Project {
     title: string;
     description: string;

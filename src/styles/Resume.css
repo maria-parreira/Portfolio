@@ -1,0 +1,46 @@
+/* styles/Resume.css */
+
+section#Resume {
+    background: #f9f9f9; /* Cor de fundo suave para a seção */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 30px; /* Espaçamento abaixo da seção */
+    max-width: 900px; /* Largura máxima ajustada */
+    margin: 0 auto; /* Centraliza a seção */
+    text-align: center; /* Centraliza o texto na seção */
+}
+
+section#Resume h2 {
+    color: #333; /* Cor do título */
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+section#Resume p {
+    color: #666; /* Cor do parágrafo */
+    font-size: 1rem; /* Tamanho da fonte do parágrafo */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+.resume-link {
+    display: inline-block; /* Permite ajustar o padding e o background */
+    background: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Negrito para o texto do botão */
+    font-size: 1rem; /* Tamanho da fonte do botão */
+    transition: background 0.3s, transform 0.3s; /* Transição suave para efeitos de hover */
+}
+
+.resume-link:hover {
+    background: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão um pouco ao passar o mouse */
+}
+
+.resume-link:active {
+    transform: translateY(1px); /* Efeito de pressionar o botão */
+}

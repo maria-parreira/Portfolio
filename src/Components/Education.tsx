@@ -1,7 +1,5 @@
-
-import '../styles/Education.css'
 import React from 'react';
-
+import '../styles/Education.css';
 
 const Education: React.FC = () => {
     const educationList = [
@@ -25,10 +23,12 @@ const Education: React.FC = () => {
             <div className="timeline">
                 {educationList.map((edu, index) => (
                     <div key={index} className="timeline-item">
-                        <h3>{edu.degree}</h3>
-                        <h4>{edu.institution}</h4>
-                        <p>{edu.duration}</p>
-                        <p>{edu.description}</p>
+                        <div className="card">
+                            <h3>{edu.degree}</h3>
+                            <h4>{edu.institution}</h4>
+                            <p>{edu.duration}</p>
+                            <p>{edu.description}</p>
+                        </div>
                     </div>
                 ))}
             </div>

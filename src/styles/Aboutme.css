@@ -1,42 +1,35 @@
-#Aboutme {
-    width: 100%;
-    height: 66vh;
-    background-size: 500px;
-    border-image-width: 10px;
-    background-position: right;
-    background-repeat: no-repeat;
-}
+/* styles/Aboutme.css */
 
-/* Estilo do título */
-#Aboutme h2 {
-    font-size: 2rem; /* Tamanho do texto do título */
-    color: olive; /* Cor do título */
+section#Aboutme {
+    background: #f9f9f9; /* Cor de fundo mais suave para a seção */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra um pouco mais pronunciada *
+    margin-bottom: 30px; /* Espaçamento abaixo da seção */
+    max-width: 900px; /* Largura máxima ajustada */
+    margin: 30px auto; /* Centraliza a seção */
+}
+section#Aboutme h2 {
+    color: #222; /* Cor do título */
+    font-size: 1.8rem; /* Tamanho da fonte do título */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
-    margin-left: 10px;
-    margin-top: 0px;
+    text-align: center; /* Centraliza o título */
 }
 
-/* Estilo do contêiner do parágrafo */
 .about {
-    max-width: 800px; /* Define a largura máxima para o parágrafo */
-    text-align: justify; /* Garante que o texto esteja alinhado à esquerda */
-
+    font-size: 1rem; /* Tamanho da fonte do texto */
+    color: #555; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha */
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-/* Estilo do parágrafo */
 .about p {
-    color: #000; /* Cor preta para o texto */
-    font-size: small; /* Tamanho menor para o texto */
-    margin-bottom: 15px; /* Espaço entre parágrafos */
+    margin-bottom: 20px; /* Espaçamento entre parágrafos */
 }
 
-/* Remove o espaço após o último parágrafo */
-.about p:last-child {
-    margin-bottom: 0; /* Remove a margem inferior do último parágrafo */
+.about .last {
+    font-weight: bold; /* Destaca o texto final */
+    color: #007BFF; /* Cor do texto final */
+    font-size: 1.1rem; /* Tamanho da fonte do texto final */
 }
-
-.about p.last{
-    font-weight: bold;
-}
-
-

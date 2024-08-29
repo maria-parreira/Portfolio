@@ -13,9 +13,7 @@ const App: React.FC = () => {
     return (
         <div>
             <Header/>
-            <div className="first-section">
                 <About/>
-            </div>
                 <Education/>
                 <Skills/>
                 <Projects/>

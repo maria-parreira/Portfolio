@@ -1,155 +1,77 @@
-:root {
-    --primary-color: peachpuff;
-    --secondary-color: black;
-    --accent-color: #e74c3c;
-    --background-color: #ecf0f1;
-    --text-color: #333;
-    --light-text-color: #7f8c8d;
-    --border-radius: 8px;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+/* styles/Global.css */
 
-/* Estilo global */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+/* Reset básico para garantir consistência entre navegadores */
+* {
     margin: 0;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
-    background-image: url('../assets/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    box-sizing: border-box; /* Garantir que padding e border sejam incluídos no tamanho dos elementos */
-}
-
-/* Estilo para cabeçalhos */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-    line-height: 1.2; /* Melhor espaçamento entre linhas para cabeçalhos */
-}
-
-/* Links */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--accent-color);
-}
-
-/* Botões */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--accent-color);
-}
-
-/* Seções */
-section {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    max-width: 1200px;
-    width: 100%;
-    transition: transform 0.3s ease;
-    margin-bottom: 40px;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* Aplicar margens específicas apenas na primeira seção */
-section.first-section {
-    margin-top: 100px;
+html {
+    font-size: 16px; /* Tamanho da fonte base */
+    line-height: 1.6;
 }
 
-section:hover {
-    transform: translateY(-5px);
-}
-
-/* Listas */
-ul {
-    list-style-type: none;
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Cor do texto */
+    background-color: #f4f4f4; /* Cor de fundo do corpo */
     padding: 0;
+    margin: 0;
 }
 
-li {
-    margin-bottom: 15px;
+header, footer {
+    background: #fff; /* Cor de fundo do cabeçalho e rodapé */
+    border-bottom: 1px solid #ddd; /* Borda inferior do cabeçalho */
+    padding: 20px;
+    text-align: center;
 }
 
-li a {
-    display: block;
-    padding: 10px 15px;
-    background-color: var(--primary-color);
-    color: #fff;
-    border-radius: var(--border-radius);
-    transition: background-color 0.3s ease;
+footer {
+    border-top: 1px solid #ddd; /* Borda superior do rodapé */
+    border-bottom: none; /* Remove a borda inferior do rodapé */
+    margin-top: 20px;
 }
 
-li a:hover {
-    background-color: var(--accent-color);
+.first-section {
+    padding: 20px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    body {
-        padding-top: 60px; /* Ajuste do padding-top para dispositivos móveis */
-        background-attachment: scroll; /* Melhora a performance em dispositivos móveis */
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1.5rem; /* Tamanho ajustado dos cabeçalhos em telas menores */
-    }
-
-    section {
-        padding: 15px; /* Reduz o padding das seções em dispositivos móveis */
-        margin: 15px 0; /* Reduz as margens para seções em dispositivos móveis */
-        margin-bottom: 30px;
-    }
-
-    button {
-        font-size: 14px; /* Reduz o tamanho da fonte do botão em telas menores */
-        padding: 8px 16px; /* Ajusta o padding dos botões em dispositivos móveis */
-    }
-
-    li a {
-        padding: 8px 12px; /* Ajusta o padding das listas em dispositivos móveis */
-    }
+main {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
+    background: #fff; /* Cor de fundo do conteúdo principal */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-@media (max-width: 480px) {
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1.25rem; /* Tamanho ainda menor dos cabeçalhos para telas muito pequenas */
-    }
-
-    section {
-        padding: 10px; /* Mais redução de padding em dispositivos muito pequenos */
-        margin: 10px 0; /* Reduz ainda mais as margens das seções */
-    }
-
-    button {
-        font-size: 12px; /* Fontes menores nos botões para dispositivos muito pequenos */
-        padding: 6px 12px; /* Ajusta ainda mais o padding dos botões */
-    }
-
-    li a {
-        padding: 6px 10px; /* Ajusta o padding das listas para telas muito pequenas */
-    }
+h1, h2, h3, h4, h5, h6 {
+    color: #222; /* Cor dos cabeçalhos */
+    margin-bottom: 10px;
 }
+
+a {
+    color: #007BFF; /* Cor dos links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha links ao passar o mouse */
+}
+
+button {
+    background: #007BFF; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 4px; /* Cantos arredondados */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem; /* Tamanho da fonte dos botões */
+}
+
+button:hover {
+    background: #0056b3; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+/* Outros estilos específicos podem ser adicionados conforme necessário */
