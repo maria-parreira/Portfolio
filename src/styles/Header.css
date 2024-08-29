@@ -6,13 +6,13 @@ header {
     left: 0; /* Alinha o header ao lado esquerdo da página */
     width: 250px; /* Largura fixa para o header */
     height: 100vh; /* Ocupa toda a altura da viewport */
-    background: #f8f9fa; /* Cor de fundo suave para o header */
+    background: lightgreen; /* Cor de fundo suave para o header */
     border-right: 1px solid #e0e0e0; /* Linha divisória à direita */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra à direita do header */
     display: flex; /* Usa flexbox para o layout interno */
     flex-direction: column; /* Organiza os itens verticalmente */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
-    padding: 20px; /* Espaçamento interno do header */
+    padding: 10px; /* Espaçamento interno do header */
     box-sizing: border-box; /* Inclui padding e border na largura total */
     z-index: 1000; /* Mantém o header acima de outros elementos */
 }
@@ -27,7 +27,8 @@ header h1 {
 header nav ul {
     list-style: none; /* Remove os marcadores da lista */
     padding: 0; /* Remove o padding */
-    margin: 0; /* Remove a margem */
+    margin: auto; /* Remove a margem */
+    width: 45%;
 }
 
 header nav ul li {
@@ -60,8 +61,9 @@ header nav ul li a:hover {
 }
 
 .intro-image {
-    width: 150px; /* Largura da imagem ajustada para ser menor */
+    width: 80%; /* Largura da imagem ajustada para ser menor */
     height: auto; /* Mantém a proporção da imagem */
     border: 1px solid #007BFF; /* Adiciona uma borda ao redor da imagem */
     margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+
 }

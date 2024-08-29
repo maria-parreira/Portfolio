@@ -5,7 +5,6 @@ section#Education {
     padding: 40px 20px; /* Espaçamento interno */
     border-radius: 8px; /* Cantos arredondados */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    margin-bottom: 30px; /* Espaçamento abaixo da seção */
     max-width: 900px; /* Largura máxima ajustada */
     margin: 30px auto; /* Centraliza a seção */
 }
@@ -37,12 +36,14 @@ section#Education h2 {
     position: relative;
     display: flex;
     justify-content: flex-start; /* Alinha os itens à direita por padrão */
-    margin: 20px 0;
-    padding-left: 30px; /* Espaçamento para o ícone da linha do tempo */
+    margin: 10px 0;
+    padding-left: 150px; /* Reduz o espaçamento para aproximar da linha temporal */
 }
 
 .timeline-item:nth-child(even) {
     justify-content: flex-end; /* Alinha os itens pares à esquerda */
+    padding-left: 0; /* Remove o padding-left dos itens à esquerda */
+    padding-right: 150px; /* Adiciona padding-right para aproximar da linha temporal */
 }
 
 .timeline-item::before {
@@ -50,8 +51,8 @@ section#Education h2 {
     position: absolute;
     left: 50%;
     top: 0;
-    width: 12px;
-    height: 12px;
+    width: 17px;
+    height: 17px;
     background: #007BFF; /* Cor do ícone da linha do tempo */
     border-radius: 50%; /* Faz o ícone ser circular */
     transform: translateX(-50%);
@@ -63,8 +64,8 @@ section#Education h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra da caixa */
     padding: 20px; /* Espaçamento interno da caixa */
     margin-bottom: 10px; /* Espaçamento abaixo da caixa */
-    max-width: 600px; /* Largura máxima da caixa */
     position: relative; /* Contexto para posicionamento dos elementos internos */
+    width: 250px;
 }
 
 .timeline-item h3 {
