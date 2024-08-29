@@ -12,7 +12,7 @@ section#Skills {
 
 section#Skills h2 {
     color: #333; /* Cor do título */
-    font-size: 2rem; /* Tamanho do título */
+    font-size: 1.0rem; /* Tamanho do título */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
     text-align: center; /* Centraliza o título */
 }
@@ -31,7 +31,7 @@ li {
     border-radius: 8px; /* Cantos arredondados dos cartões */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil dos cartões */
     padding: 20px; /* Espaçamento interno dos cartões */
-    font-size: 1.2rem; /* Tamanho da fonte */
+    font-size: 0.8rem; /* Tamanho da fonte */
     color: #333; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     width: 150px; /* Largura dos cartões */

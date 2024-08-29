@@ -13,13 +13,13 @@ section#Resume {
 
 section#Resume h2 {
     color: #333; /* Cor do título */
-    font-size: 2rem; /* Tamanho do título */
+    font-size: 1.0rem; /* Tamanho do título */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
 section#Resume p {
     color: #666; /* Cor do parágrafo */
-    font-size: 1rem; /* Tamanho da fonte do parágrafo */
+    font-size: 0.8rem; /* Tamanho da fonte do parágrafo */
     margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
     line-height: 1.6; /* Melhora a legibilidade do texto */
 }
@@ -32,7 +32,7 @@ section#Resume p {
     border-radius: 5px; /* Cantos arredondados do botão */
     text-decoration: none; /* Remove o sublinhado do link */
     font-weight: bold; /* Negrito para o texto do botão */
-    font-size: 1rem; /* Tamanho da fonte do botão */
+    font-size: 0.8rem; /* Tamanho da fonte do botão */
     transition: background 0.3s, transform 0.3s; /* Transição suave para efeitos de hover */
 }
 

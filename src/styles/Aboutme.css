@@ -11,13 +11,13 @@ section#Aboutme {
 }
 section#Aboutme h2 {
     color: #222; /* Cor do título */
-    font-size: 1.8rem; /* Tamanho da fonte do título */
+    font-size: 1.0rem; /* Tamanho da fonte do título */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
     text-align: center; /* Centraliza o título */
 }
 
 .about {
-    font-size: 1rem; /* Tamanho da fonte do texto */
+    font-size: 0.8rem; /* Tamanho da fonte do texto */
     color: #555; /* Cor do texto */
     line-height: 1.6; /* Altura da linha */
     max-width: 800px; /* Largura máxima do conteúdo */
@@ -31,5 +31,5 @@ section#Aboutme h2 {
 .about .last {
     font-weight: bold; /* Destaca o texto final */
     color: #007BFF; /* Cor do texto final */
-    font-size: 1.1rem; /* Tamanho da fonte do texto final */
+    font-size: 0.8rem; /* Tamanho da fonte do texto final */
 }

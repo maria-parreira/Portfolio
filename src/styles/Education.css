@@ -12,7 +12,7 @@ section#Education {
 
 section#Education h2 {
     color: #333; /* Cor do título */
-    font-size: 2rem; /* Tamanho do título */
+    font-size: 1.0rem; /* Tamanho do título */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
     text-align: center; /* Centraliza o título */
 }
@@ -69,18 +69,18 @@ section#Education h2 {
 
 .timeline-item h3 {
     color: #222; /* Cor do grau */
-    font-size: 1.5rem; /* Tamanho da fonte do grau */
+    font-size: 0.9rem; /* Tamanho da fonte do grau */
     margin-bottom: 5px; /* Espaçamento abaixo do grau */
 }
 
 .timeline-item h4 {
     color: #555; /* Cor da instituição */
-    font-size: 1.2rem; /* Tamanho da fonte da instituição */
+    font-size: 0.9rem; /* Tamanho da fonte da instituição */
     margin-bottom: 5px; /* Espaçamento abaixo da instituição */
 }
 
 .timeline-item p {
     color: #666; /* Cor da descrição */
-    font-size: 1rem; /* Tamanho da fonte da descrição */
+    font-size: 0.7rem; /* Tamanho da fonte da descrição */
     margin-bottom: 10px; /* Espaçamento entre descrições */
 }
