@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Introduction.css';
-import helloImage from "../assets/hello.png";
+import helloImage from "../assets/hello.jpg";
 
 const Introduction: React.FC = () => {
     return (

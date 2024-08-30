@@ -55,7 +55,7 @@ section#Education h2 {
     top: 0;
     width: 50px;
     height: 50px;
-    background: url('../assets/vet.jpeg') no-repeat center center; /* Caminho para a imagem padrão */
+    background: url('../assets/vet.jpg') no-repeat center center; /* Caminho para a imagem padrão */
     background-size: contain; /* Ajusta a imagem para caber no container */
     transform: translateX(-50%);
     border-radius: 50%;
@@ -64,7 +64,7 @@ section#Education h2 {
 
 /* Estilo para o primeiro item, usando uma imagem diferente */
 .timeline-item:first-child::before {
-    background: url('../assets/it.png') no-repeat center center; /* Caminho para a imagem diferente */
+    background: url('../assets/it.jpg') no-repeat center center; /* Caminho para a imagem diferente */
     background-size: contain; /* Ajusta a imagem para caber no container */
     width: 50px; /* Tamanho personalizado para o primeiro ícone, se necessário */
     height: 50px;

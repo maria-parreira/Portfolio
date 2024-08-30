@@ -12,12 +12,12 @@ const projects: Project[] = [
     {
         title: 'Smart Home',
         link: 'https://github.com/maria-parreira/smarthome-switch-dev',
-        image: 'src/assets/shome.png'
+        image: 'src/assets/shome.jpg'
     },
     {
         title: 'TCP vs UPD',
         link: 'https://github.com/maria-parreira/scomred-switch-dev',
-        image: 'src/assets/tcpudp.png'
+        image: 'src/assets/tcpudp.jpg'
     },
     {
         title: 'DevOps',
@@ -27,7 +27,7 @@ const projects: Project[] = [
     {
         title: 'Lost and Found',
         link: 'https://github.com/maria-parreira/lost-and-found',
-        image: 'src/assets/lf.png'
+        image: 'src/assets/lf.jpg'
     },
 
 ];
