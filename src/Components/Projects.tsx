@@ -1,33 +1,34 @@
 import React from 'react';
 import '../styles/Projects.css';
 import '../styles/SectionAdjustment.css';
+import shome from '../assets/shome.jpg';
+import tcpudp from '../assets/tcpudp.jpg';
+import devops from '../assets/devops.jpg';
+import lf from '../assets/lf.jpg';
 
-interface Project {
-    title: string;
-    link: string;
-    image: string;  // Adicionando um campo para a imagem
-}
+
+interface Project {}
 
 const projects: Project[] = [
     {
         title: 'Smart Home',
         link: 'https://github.com/maria-parreira/smarthome-switch-dev',
-        image: 'src/assets/shome.jpg'
+        image: shome
     },
     {
         title: 'TCP vs UPD',
         link: 'https://github.com/maria-parreira/scomred-switch-dev',
-        image: 'src/assets/tcpudp.jpg'
+        image: tcpudp
     },
     {
         title: 'DevOps',
         link: 'https://github.com/maria-parreira/devops-switch-dev',
-        image: 'src/assets/devops.jpg'
+        image: devops
     },
     {
         title: 'Lost and Found',
         link: 'https://github.com/maria-parreira/lost-and-found',
-        image: 'src/assets/lf.jpg'
+        image: lf
     },
 
 ];
