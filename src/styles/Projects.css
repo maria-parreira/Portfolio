@@ -76,3 +76,48 @@ section#Projects h2 {
     }
 
 }
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Define duas colunas que se ajustam conforme o tamanho da tela */
+    gap: 20px; /* Espaçamento entre os cartões */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.project-item {
+    background: #fff; /* Cor de fundo do cartão */
+    border-radius: 8px; /* Cantos arredondados do cartão */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil do cartão */
+    padding: 20px; /* Espaçamento interno do cartão */
+    display: flex; /* Usa flexbox para o layout interno */
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo no centro do cartão */
+    text-align: center; /* Centraliza o texto */
+}
+
+.project-item h3 {
+    color: #222; /* Cor do título do projeto */
+    font-size: 1.5rem; /* Tamanho da fonte do título do projeto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título do projeto */
+}
+
+.project-image {
+    max-width: 100%;  /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto;     /* Mantém a proporção original da imagem */
+    max-height: 150px; /* Limita a altura da imagem */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+    display: block;  /* Garante que a imagem seja tratada como um bloco */
+    border-radius: 8px; /* Adiciona cantos arredondados à imagem */
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Define uma coluna em telas pequenas */
+    }
+
+    .project-item {
+        width: 100%; /* Ajusta a largura dos cartões para a largura total em telas pequenas */
+        max-width: none; /* Remove a largura máxima */
+    }
+}
+
