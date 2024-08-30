@@ -8,6 +8,7 @@ section#Experience {
     margin-bottom: 30px; /* Espaçamento abaixo da seção */
     max-width: 900px; /* Largura máxima ajustada */
     margin: 30px auto; /* Centraliza a seção */
+    margin-left: 270px;
 }
 
 section#Experience h2 {

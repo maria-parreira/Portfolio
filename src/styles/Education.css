@@ -7,6 +7,7 @@ section#Education {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     max-width: 900px; /* Largura máxima ajustada */
     margin: 30px auto; /* Centraliza a seção */
+    margin-left: 270px;
 }
 
 section#Education h2 {

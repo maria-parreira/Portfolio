@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Education.css';
+import '../styles/SectionAdjustment.css'
 
 const Education: React.FC = () => {
     const educationList = [

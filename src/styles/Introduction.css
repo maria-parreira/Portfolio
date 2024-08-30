@@ -1,7 +1,7 @@
 /* styles/Introduction.css */
 
 section#Introduction {
-    background: #f8f9fa; /* Cor de fundo suave */
+    background: #f4f4f4; /* Cor de fundo suave */
     padding: 60px 20px; /* Espaçamento interno aumentado */
     display: flex; /* Usa flexbox para layout */
     justify-content: center; /* Centraliza horizontalmente */

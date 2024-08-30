@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/Projects.css';
+import '../styles/SectionAdjustment.css'
+
 interface Project {
     title: string;
     description: string;

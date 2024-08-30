@@ -1,6 +1,7 @@
 import React from 'react';
 import resume from '../assets/CV.pdf';
 import '../styles/Resume.css';
+import '../styles/SectionAdjustment.css'
 
 const Resume: React.FC = () => {
     return (

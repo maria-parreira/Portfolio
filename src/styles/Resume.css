@@ -9,6 +9,7 @@ section#Resume {
     max-width: 900px; /* Largura máxima ajustada */
     margin: 0 auto; /* Centraliza a seção */
     text-align: center; /* Centraliza o texto na seção */
+    margin-left: 270px;
 }
 
 section#Resume h2 {

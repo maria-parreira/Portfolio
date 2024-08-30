@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Introduction.css';
 import helloImage from "../assets/hello.png";
+
 const Introduction: React.FC = () => {
     return (
         <section id="Introduction">

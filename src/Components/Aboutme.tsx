@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Aboutme.css'
+import '../styles/SectionAdjustment.css'
 
 const About: React.FC = () => {
     return (
