@@ -25,23 +25,9 @@ section#Resume p {
     line-height: 1.6; /* Melhora a legibilidade do texto */
 }
 
-.resume-link {
-    display: inline-block; /* Permite ajustar o padding e o background */
-    background: #007BFF; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border-radius: 5px; /* Cantos arredondados do botão */
-    text-decoration: none; /* Remove o sublinhado do link */
-    font-weight: bold; /* Negrito para o texto do botão */
-    font-size: 0.8rem; /* Tamanho da fonte do botão */
-    transition: background 0.3s, transform 0.3s; /* Transição suave para efeitos de hover */
-}
-
-.resume-link:hover {
-    background: #0056b3; /* Cor de fundo do botão ao passar o mouse */
-    transform: translateY(-2px); /* Levanta o botão um pouco ao passar o mouse */
-}
-
-.resume-link:active {
-    transform: translateY(1px); /* Efeito de pressionar o botão */
+.download-image {
+    margin-right: 8px; /* Espaço entre a imagem e o texto */
+    width: 50px; /* Largura da imagem */
+    height: 50px; /* Altura da imagem */
+    object-fit: contain; /* Garante que a imagem mantenha suas proporções */
 }
