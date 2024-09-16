@@ -4,8 +4,12 @@ import tcpudp from '../assets/tcpudp.jpg';
 import devops from '../assets/devops.jpg';
 import lf from '../assets/lf.jpg';
 
-
-interface Project {}
+interface Project {
+    title: string;
+    link: string;
+    image: string;
+    customStyles?: React.CSSProperties; // Adicionado para estilos personalizados
+}
 
 const projects: Project[] = [
     {
@@ -14,9 +18,10 @@ const projects: Project[] = [
         image: shome
     },
     {
-        title: 'TCP vs UPD',
+        title: 'TCP vs UDP',
         link: 'https://github.com/maria-parreira/scomred-switch-dev',
-        image: tcpudp
+        image: tcpudp,
+        customStyles: { width: '100%', height: '100%', objectFit: 'scale-down' } // Estilos personalizados para esta imagem
     },
     {
         title: 'DevOps',
@@ -28,29 +33,34 @@ const projects: Project[] = [
         link: 'https://github.com/maria-parreira/lost-and-found',
         image: lf
     },
-
 ];
 
 const Projects: React.FC = () => {
     return (
-        <section id="Projects" className="py-10 bg-gray-50">
-            <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-                {projects.map((project, index) => (
-                    <div
-                        key={index}
-                        className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
-                    >
-                        <h3 className="text-xl font-semibold text-gray-800 p-4 text-center">{project.title}</h3>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
-                            <img
-                                src={project.image}
-                                alt={`${project.title} screenshot`}
-                                className="w-full h-48 object-cover"
-                            />
-                        </a>
-                    </div>
-                ))}
+        <section id="Projects" className="py-12 bg-gray-50">
+            <h2 className="text-3xl font-extrabold text-center mb-10 text-gray-800">Projects</h2>
+            <div className="flex justify-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl">
+                    {projects.map((project, index) => (
+                        <div
+                            key={index}
+                            className="relative group bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
+                            style={{ width: '250px', height: '250px' }}
+                        >
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                                <img
+                                    src={project.image}
+                                    alt={`${project.title} screenshot`}
+                                    className="w-full h-full object-cover"
+                                    style={project.customStyles} // Aplica estilos personalizados se existirem
+                                />
+                                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white p-4">
+                                    <span className="text-lg font-semibold">{project.title}</span>
+                                </div>
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

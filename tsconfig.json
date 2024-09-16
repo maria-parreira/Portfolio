@@ -1,5 +1,5 @@
 {
-  "files": [],
+  "files": ["triggerOnce"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }

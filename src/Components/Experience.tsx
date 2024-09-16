@@ -4,16 +4,16 @@ const Experience: React.FC = () => {
 
     const experiences = [
         {
-            title: 'Software Engineer',
-            company: 'Tech Company',
-            duration: 'Jan 2020 - Present',
-            description: 'Developing and maintaining web applications using modern technologies.',
+            title: '',
+            company: '',
+            duration: '',
+            description: '',
         },
         {
-            title: 'Frontend Developer',
-            company: 'Design Agency',
-            duration: 'May 2018 - Dec 2019',
-            description: 'Worked on UI/UX design and frontend development for various clients.',
+            title: '',
+            company: '',
+            duration: '',
+            description: '',
         }
     ];
 

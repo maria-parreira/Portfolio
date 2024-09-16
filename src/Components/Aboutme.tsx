@@ -1,21 +1,35 @@
 import React from 'react';
-import myImage from '../assets/profile-image.jpg'; // Substitua pelo caminho da sua imagem
+import myImage1 from '../assets/profile-image.jpg';
+import myImage2 from '../assets/me-2.jpg';
+import myImage3 from '../assets/me-3.jpg';
 
 const About: React.FC = () => {
     return (
-        <section id="Aboutme" className="py-12 bg-gray-100">
+        <section id="Aboutme" className="py-12">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
-                {/* Imagem */}
-                <div className="md:w-1/3 flex justify-center mb-8 md:mb-0">
+                {/* Galeria de Imagens */}
+                <div className="md:w-1/3 flex flex-col md:flex-row md:space-x-4 mb-8 md:mb-0">
                     <img
-                        src={myImage}
+                        src={myImage1}
                         alt="Maria Parreira"
-                        className="rounded-full w-40 h-40 object-cover border-4 border-blue-500 shadow-lg"
+                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-teal-500 shadow-lg transform transition-transform duration-500 hover:scale-105"
+                    />
+                    <img
+                        src={myImage2}
+                        alt="Maria Parreira"
+                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-teal-500 shadow-lg transform transition-transform duration-500 hover:scale-105 mt-4 md:mt-0"
+                    />
+                    <img
+                        src={myImage3}
+                        alt="Maria Parreira"
+                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-teal-500 shadow-lg transform transition-transform duration-500 hover:scale-105 mt-4 md:mt-0"
                     />
                 </div>
                 {/* Texto sobre mim */}
-                <div className="md:w-2/3 text-center md:text-left">
-                    <h2 className="text-3xl font-bold mb-4 text-gray-800">Who am I?</h2>
+                <div className="md:w-2/3 text-center md:text-left md:ml-14">
+                    <h2 className="md:w-2/3 text-left md:ml-14 text-4xl font-extrabold mb-6 text-gray-800 transition-transform transform hover:scale-105 hover:text-teal-500">
+                        Who am I?
+                    </h2>
                     <p className="text-lg text-gray-700 mb-4">
                         👋😄 Hi, I’m Maria Parreira, a Software Developer based in Porto with roots in Évora, Portugal. I’m
                         currently seeking new and exciting opportunities in the tech world.
