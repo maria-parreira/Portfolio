@@ -1,12 +1,12 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import postgraduateIcon from '../assets/it.jpg'; // Imagem para a pós-graduação
-import veterinaryIcon from '../assets/vet.jpg';    // Imagem para o mestrado
+import postgraduateIcon from '../assets/it.jpg';
+import veterinaryIcon from '../assets/vet.jpg';
 
 const Education: React.FC = () => {
     const { ref, inView } = useInView({
-        triggerOnce: false,  // O componente só vai aparecer uma vez
-        threshold: 0.1     // Define a visibilidade mínima para acionar o efeito
+        triggerOnce: false,
+        threshold: 0.1
     });
 
     const educationList = [

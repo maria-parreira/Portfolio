@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import resume from '../assets/CV.pdf';
 import downloadIcon from '../assets/cvicon.jpg';
 import emailjs from 'emailjs-com';
-import { useInView } from 'react-intersection-observer'; // Importando o hook useInView
+import { useInView } from 'react-intersection-observer';
 
 const Resume: React.FC = () => {
     const [formState, setFormState] = useState({
@@ -33,7 +33,7 @@ const Resume: React.FC = () => {
             });
     };
 
-    // Usando o useInView para observar quando o conteúdo entra na tela
+
     const { ref: sectionRef, inView: sectionInView } = useInView({
         triggerOnce: false,
         threshold: 0.5,

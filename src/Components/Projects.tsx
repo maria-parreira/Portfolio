@@ -3,7 +3,7 @@ import shome from '../assets/shome.jpg';
 import tcpudp from '../assets/tcpudp.jpg';
 import devops from '../assets/devops.jpg';
 import lf from '../assets/lf.jpg';
-import { useInView } from 'react-intersection-observer'; // Importando o hook useInView
+import { useInView } from 'react-intersection-observer';
 
 interface Project {
     title: string;
