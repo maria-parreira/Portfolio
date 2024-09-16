@@ -33,14 +33,21 @@ const projects: Project[] = [
 
 const Projects: React.FC = () => {
     return (
-        <section id="Projects">
-            <h2>Projects</h2>
-            <div className="projects-container">
+        <section id="Projects" className="py-10 bg-gray-50">
+            <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
                 {projects.map((project, index) => (
-                    <div key={index} className="project-item">
-                        <h3>{project.title}</h3>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <img src={project.image} alt={`${project.title} screenshot`} className="project-image" />
+                    <div
+                        key={index}
+                        className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                    >
+                        <h3 className="text-xl font-semibold text-gray-800 p-4 text-center">{project.title}</h3>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                            <img
+                                src={project.image}
+                                alt={`${project.title} screenshot`}
+                                className="w-full h-48 object-cover"
+                            />
                         </a>
                     </div>
                 ))}

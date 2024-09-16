@@ -1,27 +1,35 @@
 import React from 'react';
 
-
 const Experience: React.FC = () => {
 
     const experiences = [
         {
-            title: '',
-            company: '',
-            duration:'' ,
-            description:'',
+            title: 'Software Engineer',
+            company: 'Tech Company',
+            duration: 'Jan 2020 - Present',
+            description: 'Developing and maintaining web applications using modern technologies.',
+        },
+        {
+            title: 'Frontend Developer',
+            company: 'Design Agency',
+            duration: 'May 2018 - Dec 2019',
+            description: 'Worked on UI/UX design and frontend development for various clients.',
         }
     ];
 
     return (
-        <section id="Experience">
-            <h2>Experience</h2>
-            <div className="experience-list">
+        <section id="Experience" className="py-10 bg-gray-50">
+            <h2 className="text-3xl font-bold text-center mb-8">Experience</h2>
+            <div className="max-w-4xl mx-auto">
                 {experiences.map((exp, index) => (
-                    <div key={index} className="experience-item">
-                        <h3>{exp.title}</h3>
-                        <h4>{exp.company}</h4>
-                        <p>{exp.duration}</p>
-                        <p>{exp.description}</p>
+                    <div
+                        key={index}
+                        className="mb-6 p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300"
+                    >
+                        <h3 className="text-xl font-semibold text-gray-800">{exp.title}</h3>
+                        <h4 className="text-md text-gray-600">{exp.company}</h4>
+                        <p className="text-sm text-gray-500">{exp.duration}</p>
+                        <p className="mt-4 text-gray-700">{exp.description}</p>
                     </div>
                 ))}
             </div>
