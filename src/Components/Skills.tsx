@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Skills.css';
-import '../styles/SectionAdjustment.css'
+
 
 const skills: string[] = ['Java','JavaScript', 'React', 'TypeScript', 'CSS'];
 
