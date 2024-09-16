@@ -45,7 +45,7 @@ const Resume: React.FC = () => {
     });
 
     return (
-        <section id="Resume" className="py-20">
+        <section id="Resume" className="py-30">
             <h2
                 className={`text-3xl font-bold text-center mb-6 transform transition-all duration-700 ${sectionInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 ref={sectionRef}

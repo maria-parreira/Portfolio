@@ -28,7 +28,7 @@ const Skills: React.FC = () => {
     });
 
     return (
-        <section id="Skills" className="py-40">
+        <section id="Skills" className="py-60">
             <h2 className="text-3xl font-bold text-center mb-6">Here are some of my skills</h2>
             <ul
                 ref={skillsRef}  // Conectando o ref à lista de skills

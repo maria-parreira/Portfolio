@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
     });
 
     return (
-        <section id="Projects" className="py-40 ">
+        <section id="Projects" className="py-60">
             <h2
                 ref={sectionRef}
                 className={`text-3xl font-extrabold text-center mb-10 text-gray-800 transform transition-all duration-700 ${

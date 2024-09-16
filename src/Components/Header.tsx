@@ -22,11 +22,11 @@ const Header: React.FC = () => {
                 {/* Menu de navegação */}
                 <nav className={`md:flex md:items-center md:space-x-4 ${isOpen ? 'block' : 'hidden'} md:block`}>
                     <ul className="flex flex-col md:flex-row md:space-x-6 ">
-                        <li><a href="#about" className="hover:font-bold">About</a></li>
-                        <li><a href="#education" className="hover:font-bold">Education</a></li>
-                        <li><a href="#skills" className="hover:font-bold">Skills</a></li>
-                        <li><a href="#projects" className="hover:font-bold">Projects</a></li>
-                        <li><a href="#resume" className="hover:font-bold">Contacts</a></li>
+                        <li><a href="#Aboutme" className="hover:font-bold">About</a></li>
+                        <li><a href="#Education" className="hover:font-bold">Education</a></li>
+                        <li><a href="#Skills" className="hover:font-bold">Skills</a></li>
+                        <li><a href="#Projects" className="hover:font-bold">Projects</a></li>
+                        <li><a href="#Resume" className="hover:font-bold">Contacts</a></li>
                     </ul>
                 </nav>
             </div>

@@ -27,7 +27,7 @@ const Education: React.FC = () => {
     ];
 
     return (
-        <section id="Education" className={`py-40 ${inView ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}>
+        <section id="Education" className={`py-60 ${inView ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}>
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-8 text-center text-gray-800 transition-transform transform hover:scale-105 hover:text-pink-400">My Journey</h2>
                 <div ref={ref} className="flex flex-col items-center">
