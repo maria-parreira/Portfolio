@@ -8,7 +8,6 @@ import Experience from './components/Experience';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Introduction from './components/Introduction.tsx';
-import './styles/Global.css';
 import './index.css'
 
 const App: React.FC = () => {

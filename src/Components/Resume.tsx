@@ -1,7 +1,7 @@
 import React from 'react';
 import resume from '../assets/CV.pdf';
-import downloadIcon from '../assets/cvicon.jpg'; // Importe a imagem
-import '../styles/Resume.css';
+import downloadIcon from '../assets/cvicon.jpg';
+
 
 
 const Resume: React.FC = () => {

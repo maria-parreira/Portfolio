@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Projects.css';
 import shome from '../assets/shome.jpg';
 import tcpudp from '../assets/tcpudp.jpg';
 import devops from '../assets/devops.jpg';
