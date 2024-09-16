@@ -1,14 +1,28 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import myImage1 from '../assets/profile-image.jpg';
 import myImage2 from '../assets/me-2.jpg';
 import myImage3 from '../assets/me-3.jpg';
 
 const About: React.FC = () => {
+    const { ref: imageRef, inView: imageInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
+    const { ref: textRef, inView: textInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
     return (
-        <section id="Aboutme" className="py-12">
+        <section id="Aboutme" className="py-20">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
                 {/* Galeria de Imagens */}
-                <div className="md:w-1/3 flex flex-col md:flex-row md:space-x-4 mb-8 md:mb-0">
+                <div
+                    ref={imageRef}
+                    className={`md:w-1/3 flex flex-col md:flex-row md:space-x-4 mb-8 md:mb-0 transform transition-opacity duration-1000 ease-out ${imageInView ? 'opacity-100' : 'opacity-0'}`} // Animação
+                >
                     <img
                         src={myImage1}
                         alt="Maria Parreira"
@@ -26,32 +40,32 @@ const About: React.FC = () => {
                     />
                 </div>
                 {/* Texto sobre mim */}
-                <div className="md:w-2/3 text-center md:text-left md:ml-14">
-                    <h2 className="md:w-2/3 text-left md:ml-14 text-4xl font-extrabold mb-6 text-gray-800 transition-transform transform hover:scale-105 hover:text-teal-500">
+                <div
+                    ref={textRef}
+                    className={`md:w-2/3 text-center md:text-left md:ml-14 transform transition-opacity duration-1000 ease-out ${textInView ? 'opacity-100' : 'opacity-0'}`} // Animação
+                >
+                    <h2 className="text-3xl text-left font-bold mb-8 text-gray-800 transition-transform transform hover:scale-105 hover:text-pink-400">
                         Who am I?
                     </h2>
-                    <p className="text-lg text-gray-700 mb-4">
-                        👋😄 Hi, I’m Maria Parreira, a Software Developer based in Porto with roots in Évora, Portugal. I’m
-                        currently seeking new and exciting opportunities in the tech world.
+                    <p className="text-lg text-justify text-gray-700 mb-4">
+                        I’m Maria Parreira, a software developer based in Porto with roots in Évora, Portugal.
+                        While technology is a big part of my life, there’s so much more that keeps me grounded and connected to the world around me.
                     </p>
-                    <p className="text-lg text-gray-700 mb-4">
-                        I recently completed the SWITCH postgraduation program at ISEP, where I honed my skills in front-end
-                        development using JavaScript, HTML, CSS, and React to create dynamic and engaging web interfaces. On
-                        the back-end, I have a solid foundation in Java, Spring Boot, and JPA, and I’m proficient in
-                        managing databases with MySQL. Additionally, I have experience with Docker, Jenkins, and Git, which
-                        enables me to work efficiently in modern DevOps environments.
+                    <p className="text-lg text-justify text-gray-700 mb-4">
+                        I absolutely love spending time outdoors, and the beach is my happy place.
+                        Whether it's soaking up the sun, swimming in the ocean, or taking long walks on the shore, I always make the most of these moments.
+                        I’m also a big fan of outdoor activities like hiking and camping — being surrounded by nature always recharges me.
                     </p>
-                    <p className="text-lg text-gray-700 mb-4">
-                        My background in veterinary medicine provided me with strong problem-solving skills, attention to
-                        detail, and the ability to collaborate effectively within a team.
+                    <p className="text-lg text-justify text-gray-700 mb-4">
+                        Traveling is another passion of mine. I love exploring new places, diving into different cultures, and of course, trying local food (especially if it's something I’ve never tasted before!).
+                        I also deeply value time with my family and friends, whether it's cozy dinners, spontaneous adventures, or simply gathering at home to enjoy each other’s company.
                     </p>
-                    <p className="text-lg text-gray-700 mb-4">
-                        Beyond coding and work, I’m passionate about traveling, exploring new cultures, trying different
-                        cuisines, spending time at the beach, hiking in the great outdoors, and camping.
+                    <p className="text-lg text-justify text-gray-700 mb-4">
+                        On the professional side, I’m a dedicated software developer who thrives on building innovative solutions.
+                        But more than anything, I believe in maintaining a healthy balance between work and life, and I’m always seeking new experiences and ways to grow both personally and professionally.
                     </p>
-                    <p className="text-lg text-gray-700 font-semibold">
-                        If you’re looking for a dedicated and versatile developer who thrives in team environments, I’d love
-                        to connect!😻
+                    <p className="text-lg text-justify text-gray-700 font-semibold">
+                        Whether you want to talk tech, travel, or your favorite dish, I’d love to connect! 😻
                     </p>
                 </div>
             </div>

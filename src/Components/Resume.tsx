@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import resume from '../assets/CV.pdf';
 import downloadIcon from '../assets/cvicon.jpg';
 import emailjs from 'emailjs-com';
+import { useInView } from 'react-intersection-observer'; // Importando o hook useInView
 
 const Resume: React.FC = () => {
     const [formState, setFormState] = useState({
@@ -32,13 +33,29 @@ const Resume: React.FC = () => {
             });
     };
 
+    // Usando o useInView para observar quando o conteúdo entra na tela
+    const { ref: sectionRef, inView: sectionInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
+    const { ref: formRef, inView: formInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
     return (
-        <section id="Resume" className="py-10 bg-gray-50">
-            <h2 className="text-3xl font-bold text-center mb-6">Resume</h2>
-            <p className="text-center text-lg text-gray-700 mb-6">
+        <section id="Resume" className="py-20">
+            <h2
+                className={`text-3xl font-bold text-center mb-6 transform transition-all duration-700 ${sectionInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                ref={sectionRef}
+            >
+                Resume
+            </h2>
+            <p className={`text-center text-lg text-gray-700 mb-6 transform transition-opacity duration-1000 ${sectionInView ? 'opacity-100' : 'opacity-0'}`}>
                 For a detailed overview of my professional background, skills, and experiences, click below:
             </p>
-            <div className="flex justify-center mb-8">
+            <div className={`flex justify-center mb-8 transform transition-transform duration-1000 ${sectionInView ? 'scale-100' : 'scale-90 opacity-0'}`}>
                 <a
                     href={resume}
                     download="Maria_Parreira_CV.pdf"
@@ -52,7 +69,9 @@ const Resume: React.FC = () => {
                     <span>Download</span>
                 </a>
             </div>
-            <div className="max-w-2xl mx-auto px-4">
+
+            {/* Formulário de contato */}
+            <div className={`max-w-2xl mx-auto px-4 transform transition-opacity duration-1000 ${formInView ? 'opacity-100' : 'opacity-0'}`} ref={formRef}>
                 <h3 className="text-2xl font-semibold text-center mb-4 text-gray-800">Contact Me</h3>
                 <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                     <div className="mb-4">
