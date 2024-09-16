@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Experience.css';
-import '../styles/SectionAdjustment.css'
+
 const Experience: React.FC = () => {
 
     const experiences = [
