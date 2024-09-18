@@ -13,7 +13,7 @@ const App: React.FC = () => {
     return (
         <div
             className=" bg-cover bg-center bg-no-repeat bg-fixed "
-            style={{ backgroundImage: 'url(./src/assets/bgimage.png)' }}
+            style={{ backgroundImage: 'url(src/assets/bgimage.png)' }}
         >
             <Header />
             <main className="container mx-auto p-4 bg-white bg-opacity-80">
