@@ -8,12 +8,13 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Introduction from './components/Introduction';
 import './index.css';
+import bgImage from './assets/bgimage.png';
 
 const App: React.FC = () => {
     return (
         <div
-            className=" bg-cover bg-center bg-no-repeat bg-fixed "
-            style={{ backgroundImage: 'url(src/assets/bgimage.png)' }}
+            className="bg-cover bg-center bg-no-repeat bg-fixed"
+            style={{ backgroundImage: `url(${bgImage})` }}
         >
             <Header />
             <main className="container mx-auto p-4 bg-white bg-opacity-80">
