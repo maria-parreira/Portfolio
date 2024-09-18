@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
 
     return (
         <section id="Skills" className="py-60">
-            <h2 className="text-3xl font-bold text-center mb-6">Here are some of my skills</h2>
+            <h2 className="text-3xl font-bold mb-20 text-center text-gray-800 transition-transform transform hover:scale-105 hover:text-pink-400">Here are some of my skills</h2>
             <ul
                 ref={skillsRef}  // Conectando o ref à lista de skills
                 className={`flex flex-wrap justify-center gap-6 transform transition-opacity duration-1000 ease-out ${skillsInView ? 'opacity-100' : 'opacity-0'}`} // Animação de opacidade

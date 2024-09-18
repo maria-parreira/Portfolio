@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
         <section id="Projects" className="py-60">
             <h2
                 ref={sectionRef}
-                className={`text-3xl font-extrabold text-center mb-10 text-gray-800 transform transition-all duration-700 ${
+                className={`text-3xl font-bold mb-20 text-center text-gray-800 transition-transform transform hover:scale-105 hover:text-pink-400 ${
                     sectionInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
             >
