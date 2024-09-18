@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     return (
         <header className=" text-white py-6">
             <div className="container mx-auto px-4 flex items-center justify-between">
-                <h1 className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-pink-400 to-green-500 bg-clip-text">
+                <h1 className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-pink-600 to-orange-400 bg-clip-text">
                     Maria Parreira
                 </h1>
 
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
                         <li className="relative group">
                             <a
                                 href="#Aboutme"
-                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-300"
+                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-400"
                             >
                                 About
                             </a>
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
                         <li className="relative group">
                             <a
                                 href="#Education"
-                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-300"
+                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-400"
                             >
                                 Education
                             </a>
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
                         <li className="relative group">
                             <a
                                 href="#Skills"
-                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-300"
+                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-400"
                             >
                                 Skills
                             </a>
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
                         <li className="relative group">
                             <a
                                 href="#Projects"
-                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-300"
+                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-400"
                             >
                                 Projects
                             </a>
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
                         <li className="relative group">
                             <a
                                 href="#Resume"
-                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-300"
+                                className="text-lg font-semibold transition-colors duration-300 hover:text-pink-400"
                             >
                                 Contacts
                             </a>

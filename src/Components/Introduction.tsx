@@ -7,7 +7,7 @@ const Introduction: React.FC = () => {
             <div className="container mx-auto px-4 flex flex-col items-center md:flex-row md:items-center">
                 {/* Texto de introdução */}
                 <div className="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
-                    <h2 className="text-4xl font-bold mb-4">Welcome to my personal page!👋</h2>
+                    <h2 className="text-4xl font-bold mb-4">Welcome to my web page!👋</h2>
                     <p className="text-lg font-light"></p>
                 </div>
                 {/* Imagem de introdução */}
