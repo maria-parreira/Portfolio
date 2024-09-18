@@ -26,17 +26,17 @@ const About: React.FC = () => {
                     <img
                         src={myImage1}
                         alt="Maria Parreira"
-                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-teal-500 shadow-lg transform transition-transform duration-500 hover:scale-105"
+                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-green-500 shadow-lg transform transition-transform duration-500 hover:scale-105"
                     />
                     <img
                         src={myImage2}
                         alt="Maria Parreira"
-                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-teal-500 shadow-lg transform transition-transform duration-500 hover:scale-105 mt-4 md:mt-0"
+                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-green-500 shadow-lg transform transition-transform duration-500 hover:scale-105 mt-4 md:mt-0"
                     />
                     <img
                         src={myImage3}
                         alt="Maria Parreira"
-                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-teal-500 shadow-lg transform transition-transform duration-500 hover:scale-105 mt-4 md:mt-0"
+                        className="rounded-lg w-full md:w-1/3 h-auto object-cover border-4 border-green-500 shadow-lg transform transition-transform duration-500 hover:scale-105 mt-4 md:mt-0"
                     />
                 </div>
                 {/* Texto sobre mim */}
@@ -44,7 +44,7 @@ const About: React.FC = () => {
                     ref={textRef}
                     className={`md:w-2/3 text-center md:text-left md:ml-14 transform transition-opacity duration-1000 ease-out ${textInView ? 'opacity-100' : 'opacity-0'}`} // Animação
                 >
-                    <h2 className="text-3xl text-left font-bold mb-8 text-gray-800 transition-transform transform hover:scale-105 hover:text-pink-400">
+                    <h2 className="text-lg text font-bold mb-8 text-center text-gray-800 transition-transform transform hover:scale-105 hover:text-blue-300">
                         Who am I?
                     </h2>
                     <p className="text-lg text-justify text-gray-700 mb-4">
