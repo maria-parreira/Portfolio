@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import About from './components/Aboutme';
@@ -12,9 +11,12 @@ import './index.css';
 
 const App: React.FC = () => {
     return (
-        <div className="font-sans bg-gray-100 text-gray-900">
+        <div
+            className=" bg-cover bg-center bg-no-repeat bg-fixed "
+            style={{ backgroundImage: 'url(./src/assets/bgimage.png)' }}
+        >
             <Header />
-            <main className="container mx-auto p-4">
+            <main className="container mx-auto p-4 bg-white bg-opacity-80">
                 <Introduction />
                 <About />
                 <Education />
