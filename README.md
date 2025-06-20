@@ -13,7 +13,6 @@ https://github.com/maria-parreira/Portfolio.git
 ````
 
 - Go to project root folder and run these commands:
-- 
 ```
 npm install
 npm run dev

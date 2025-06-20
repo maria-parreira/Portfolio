@@ -8,7 +8,7 @@ import Resume from "./sections/Resume";
 import Footer from "./sections/Footer";
 import Introduction from "./sections/Introduction";
 import "./index.css";
-import bgImage from "./assets/bgimage.png";
+import bgImage from "./assets/background.png";
 
 const App: React.FC = () => {
   return (
