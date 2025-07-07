@@ -5,7 +5,7 @@ const IntroImage: React.FC = () => (
     <img
       src={helloImage}
       alt="Portrait of Maria Parreira smiling"
-      className="rounded-full shadow-lg w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover"
+      className="rounded-full shadow-lg w-2 h-2 sm:w-24 sm:h-24 md:w-12 md:h-12 object-cover"
     />
     <figcaption className="sr-only">Maria Parreira, Web Developer</figcaption>
   </figure>

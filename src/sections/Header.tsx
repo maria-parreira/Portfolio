@@ -3,6 +3,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import NavLinkItem from "../components/header/NavLinkItem";
 import MenuToggle from "../components/header/MenuToggle";
 import { navLinks } from "../data/navLinks";
+import IntroImage from "../components/introdution/IntroImage";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,11 +30,12 @@ const Header: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <header className="text-white py-6 fixed top-0 left-0 right-0 bg-opacity-80 bg-black backdrop-blur-md z-50">
+    <header className="text-white py-3 fixed top-0 left-0 right-0 bg-opacity-10 bg-stone-200 backdrop-blur-md z-90">
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo / Título */}
-        <h1 className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-pink-600 to-orange-400 bg-clip-text">
-          Maria Parreira
+        <h1 className="flex items-center gap-6 text-xl font-extrabold text-transparent bg-rose-400 bg-clip-text">
+          <span className="whitespace-nowrap">Maria Parreira</span>
+          <IntroImage />
         </h1>
 
         {/* Botão mobile */}
