@@ -1,4 +1,4 @@
-﻿import postgraduateIcon from '../assets/it.jpg';
+﻿import postgraduateIcon from '../assets/projects/it.jpg';
 
 export interface ExperienceItem {
     title: string;

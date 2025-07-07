@@ -1,5 +1,5 @@
-﻿import resume from "../../assets/cvicon.jpg";
-import downloadIcon from "../../assets/cvicon.jpg";
+﻿import resume from "../../assets/cv/cvicon.jpg";
+import downloadIcon from "../../assets/cv/cvicon.jpg";
 
 const DownloadButton: React.FC = () => (
   <div className="flex justify-center mb-8 transition-transform duration-1000 scale-100">

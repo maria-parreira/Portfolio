@@ -8,7 +8,7 @@ import Resume from "./sections/Resume";
 import Footer from "./sections/Footer";
 import Introduction from "./sections/Introduction";
 import "./index.css";
-import bgImage from "./assets/background.png";
+import bgImage from "./assets/intro/bg_image.jpg";
 
 const App: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const App: React.FC = () => {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <Header />
-      <main className="container mx-auto p-4 bg-white bg-opacity-80">
+      <main className="container mx-auto p-4 bg-white bg-opacity-50">
         <Introduction />
         <About />
         <Journey />

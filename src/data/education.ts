@@ -1,5 +1,5 @@
-﻿import postgraduateIcon from '../assets/it.jpg';
-import veterinaryIcon from '../assets/vet.jpg';
+﻿import postgraduateIcon from '../assets/projects/it.jpg';
+import veterinaryIcon from '../assets/projects/vet.jpg';
 
 export interface EducationItem {
   degree: string;

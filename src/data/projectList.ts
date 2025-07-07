@@ -1,7 +1,7 @@
-﻿import shome from '../assets/shome.jpg';
-import tcpudp from '../assets/tcpudp.jpg';
-import devops from '../assets/devops.jpg';
-import lf from '../assets/lf.jpg';
+﻿import shome from '../assets/projects/shome.jpg';
+import tcpudp from '../assets/projects/tcpudp.jpg';
+import devops from '../assets/projects/devops.jpg';
+import lf from '../assets/projects/lf.jpg';
 
 export interface Project {
     title: string;

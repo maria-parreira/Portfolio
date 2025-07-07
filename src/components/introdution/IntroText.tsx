@@ -1,11 +1,13 @@
 ﻿const IntroText: React.FC = () => (
   <div className="md:w-1/2 text-center md:text-left">
-    <h1 id="introduction-heading" className="text-4xl font-bold mb-4">
-      Welcome to my web page! 👋
+    <h1
+      id="introduction-heading"
+      className="text-2xl font-semibold mb-4 text-gray-800"
+    >
+      Welcome to my digital space!
     </h1>
-    <p className="text-lg font-light max-w-md mx-auto md:mx-0">
-      I’m Maria Parreira, passionate about web development and always ready to
-      embrace new challenges. Explore my journey below!
+    <p className="text-base font-light max-w-md mx-auto md:mx-0 text-gray-600">
+      Explore my journey and what inspires me.
     </p>
   </div>
 );
