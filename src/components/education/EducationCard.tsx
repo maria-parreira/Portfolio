@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import { EducationItem } from "../../data/education";
+import { ExperienceItem } from "../../data/experience";
 
 interface Props {
   edu: EducationItem;

@@ -1,24 +1,29 @@
-﻿export interface ExperienceItem {
+﻿import postgraduateIcon from '../assets/it.jpg';
+
+export interface ExperienceItem {
     title: string;
     company: string;
     duration: string;
     description: string;
+    icon:string;
   }
   
   export const experiences: ExperienceItem[] = [
     {
-      title: 'Full Stack Developer Intern',
-      company: 'Your Company Name',
-      duration: 'Jan 2024 – Jun 2024',
+      title: 'Software Developer - Game',
+      company: 'VertsaPlay',
+      duration: 'Jan 2025 - Present',
       description:
-        'Worked on a real-world application using React, Node.js, and PostgreSQL. Participated in agile sprints, contributed to code reviews, and collaborated closely with designers and QA.',
+        'Currently working in the game development industry. I contribute to create online games from the game logic to the visual side. My responsibilities are developing modular, optimized systems with a focus on performance and user experience. I also contribute to develop internal tools to support the design team and improve workflow. I work primarily with Godot Engine, JavaScript and Python.',
+      icon: postgraduateIcon,
     },
     {
-      title: 'Veterinary Assistant',
-      company: 'Veterinary Clinic in Évora',
-      duration: '2018 – 2022',
+      title: 'Full Stack Developer',
+      company: 'VeriCasa',
+      duration: 'Set 2024 – Jan 2025',
       description:
-        'Assisted with surgeries, daily animal care, and client consultations. Learned how to work under pressure, multitask, and communicate effectively with diverse teams and pet owners.',
+        'Worked on a real-world application using React, Python, Node.js, and PostgreSQL. Participated in agile sprints, contributed to code reviews, and collaborated closely with stakeholders',
+      icon: postgraduateIcon,
     },
   ];
   

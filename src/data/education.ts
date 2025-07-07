@@ -23,7 +23,7 @@ export const educationList: EducationItem[] = [
     institution: 'Universidade de Évora',
     duration: '2015-2022',
     description:
-      'During my Master’s in Veterinary Medicine, I gained a better understanding of how animal bodies work, which deepened my admiration for them. I learned to communicate effectively with different colleagues and clients, and the importance of teamwork in achieving the best outcomes in diagnosing and treating companion animals.',
+      'During my Master’s in Veterinary Medicine, I gained a better understanding of how animal bodies work, which deepened my admiration for them. I learned to communicate effectively with different colleagues and customers, and the importance of teamwork in achieving the best outcomes in diagnosing and treating companion animals.',
     icon: veterinaryIcon,
   },
 ];

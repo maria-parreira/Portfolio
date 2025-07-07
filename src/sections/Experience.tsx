@@ -1,6 +1,6 @@
 import React from "react";
 import { experiences } from "../data/experience";
-import ExperienceCard from "../components/experience/ExperienceCard";
+import ExperienceCard from "../components/Journey/ExperienceCard";
 
 const Experience: React.FC = () => {
   return (
