@@ -12,10 +12,12 @@ const EducationCard: React.FC<Props> = ({ edu, reverse = false }) => {
     <div
       className={`relative flex flex-col items-start md:flex-row md:items-center ${
         reverse ? "md:flex-row-reverse" : ""
-      }`}
+      } w-full max-w-4xl mx-auto`}
     >
       {/* Icon */}
-      <div className={`flex-shrink-0 ${reverse ? "ml-6" : "mr-6"} mb-4`}>
+      <div
+        className={`flex-shrink-0 ${reverse ? "ml-6" : "mr-6"} mb-4 md:mb-0`}
+      >
         <div className="w-14 h-14 bg-gradient-to-r from-pink-400 to-yellow-500 rounded-full shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110">
           <img
             src={edu.icon}
@@ -24,6 +26,7 @@ const EducationCard: React.FC<Props> = ({ edu, reverse = false }) => {
           />
         </div>
       </div>
+
       {/* Content */}
       <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200 flex-grow max-w-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
         <h3 className="text-lg font-semibold mb-2 text-teal-700 hover:text-teal-500">

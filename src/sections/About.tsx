@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <section id="Aboutme" className="py-210">
       <div className="container mx-auto px-4">
-        <h2 className="text-xl md:text-xl font-bold mb-6 text-gray-800 text-center">
+        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
           Who am I?
         </h2>
 

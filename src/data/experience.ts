@@ -22,7 +22,7 @@ export interface ExperienceItem {
       company: 'VeriCasa',
       duration: 'Set 2024 – Jan 2025',
       description:
-        'Worked on a real-world application using React, Python, Node.js, and PostgreSQL. Participated in agile sprints, contributed to code reviews, and collaborated closely with stakeholders',
+        'Worked as a fullstack developer at a real estate startup. I contributed to the development of an AI-driven platform designed to analyze real estate documents and automatically generate contracts, reports, and signature sheets related to property transactions.On the frontend, I was responsible for building dynamic web forms used to collect data for report generation, using React, TypeScript, and Tailwind CSS. On the backend, I contributed to the development of an asynchronous processing system in Python, built around RabbitMQ, to automate task handling.',
       icon: postgraduateIcon,
     },
   ];

@@ -13,7 +13,7 @@ const ExperienceCard: React.FC<Props> = ({ experience, reverse = false }) => {
     <div
       className={`relative flex flex-col items-start md:flex-row md:items-center ${
         reverse ? "md:flex-row-reverse" : ""
-      } w-full max-w-4xl`}
+      } w-full max-w-4xl mx-auto`}
     >
       {/* Icon */}
       <div

@@ -15,13 +15,22 @@ const AboutText: React.FC = () => {
     >
       <p className="text-base md:text-lg text-center text-gray-700 leading-relaxed mb-4">
         I’m Maria Parreira, a software developer based in Porto with roots in
-        Évora, Portugal. My journey into development is grounded in curiosity,
-        problem-solving, and a love for building meaningful digital experiences.
+        Évora, Portugal.
       </p>
       <p className="text-base md:text-lg text-center text-gray-700 leading-relaxed">
-        Whether I’m working with Java, React, or Kubernetes, I always focus on
-        clean code, collaboration, and continuous learning. When I’m not coding,
-        I enjoy painting, walking by the ocean, and spending time with my dogs.
+        If I could fit my personality into a suitcase, it would be packed with
+        sunshine, passport stamps, and probably a few snacks for the road. ✈️🌞
+        I’m someone who’s always ready for the next adventure — whether it’s
+        exploring a hidden beach, hiking up a trail just to catch the sunset, or
+        saying “yes” to a food I can’t pronounce (but will absolutely try). I
+        live for the thrill of discovering new places, new flavors, and even new
+        mosquito bites from my latest camping trip. 🏕️ When I’m not outside
+        trying to convince every stray animal to be my best friend 🐶, you’ll
+        probably find me soaking up the sun, laughing with friends, or enjoying
+        a good meal with my family — because yes, food tastes better when you're
+        surrounded by people you love. In short? I’m a mix of curiosity, warmth,
+        and a little bit of chaos — but the fun kind. Life’s too short not to
+        explore it all… and I fully intend to!
       </p>
     </div>
   );

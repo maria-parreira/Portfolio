@@ -21,14 +21,14 @@ const Journey: React.FC = () => {
   return (
     <section id="Journey" className="py-40">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 hover:scale-105 hover:text-pink-400 transition-transform">
+        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
           My Journey
         </h2>
 
         {/* Experiência */}
         <div
           ref={experienceRef}
-          className={`flex flex-col items-center space-y-12 mt-20 transition-opacity duration-1000 ${
+          className={`flex flex-col items-center space-y-12 mt-12 transition-opacity duration-1000 ${
             experienceInView ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -43,7 +43,7 @@ const Journey: React.FC = () => {
         {/* Educação */}
         <div
           ref={educationRef}
-          className={`flex flex-col items-center space-y-12 mt-32 transition-opacity duration-1000 ${
+          className={`flex flex-col items-center space-y-12 mt-12 transition-opacity duration-1000 ${
             educationInView ? "opacity-100" : "opacity-0"
           }`}
         >
