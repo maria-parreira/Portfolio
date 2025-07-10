@@ -10,9 +10,9 @@ const Skills: React.FC = () => {
   });
 
   return (
-    <section id="Skills" className="py-60">
-      <h2 className="text-3xl font-bold mb-20 text-center text-gray-800 transition-transform transform hover:scale-105 hover:text-pink-400">
-        Here are some of my skills
+    <section id="Skills" className="py-20">
+      <h2 className="text-3xl font-bold mb-20 text-center text-gray-800">
+        Some of my skills
       </h2>
       <ul
         ref={skillsRef}

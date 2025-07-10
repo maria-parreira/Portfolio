@@ -6,6 +6,8 @@ import jk from "../assets/projects/jk.png";
 import kn from "../assets/projects/kn.png";
 import sboot from "../assets/projects/sboot.png";
 import docker from "../assets/projects/docker.png";
+import godot from "../assets/projects/godot.png";
+import sql from "../assets/projects/sql.png";
 
 export const skills = [
   { name: "Java", icon: javaIcon },
@@ -16,4 +18,8 @@ export const skills = [
   { name: "Jenkins", icon: jk },
   { name: "Docker", icon: docker },
   { name: "Spring Boot", icon: sboot },
+  { name: "Godot Engine", icon: godot },
+  { name: "WebSocket", icon: null },
+  { name: "SQL", icon: sql },
+  { name: "REST", icon: null },
 ];

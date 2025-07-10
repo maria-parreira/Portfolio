@@ -1,5 +1,5 @@
 import IntroText from "../components/introdution/IntroText";
-import introImage from "../assets/intro/pexels-mtyutina-954599.jpg";
+import introImage from "../assets/intro/intro_image.jpg";
 
 const Introduction: React.FC = () => {
   return (
