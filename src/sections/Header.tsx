@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import NavLinkItem from "../components/header/NavLinkItem";
 import MenuToggle from "../components/header/MenuToggle";
 import { navLinks } from "../data/navLinks";
-import IntroImage from "../components/introdution/IntroImage";
+import IntroImage from "../components/header/IntroImage";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <header className="text-white py-3 fixed top-0 left-0 right-0 bg-opacity-10 bg-stone-200 backdrop-blur-md z-90">
+    <header className="text-white py-3 fixed top-0 left-0 right-0 bg-opacity-10 bg-stone-200 backdrop-blur-md z-50">
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo / Título */}
         <h1 className="flex items-center gap-6 text-xl font-extrabold text-transparent bg-rose-400 bg-clip-text">

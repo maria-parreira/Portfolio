@@ -1,4 +1,5 @@
 import IntroText from "../components/introdution/IntroText";
+import introImage from "../assets/intro/pexels-mtyutina-954599.jpg";
 
 const Introduction: React.FC = () => {
   return (
@@ -8,9 +9,10 @@ const Introduction: React.FC = () => {
       className="mt-10 py-10"
     >
       <div className="container mx-auto px-4">
-        <div className="bg-zinc-100 text-base text-gray-800 leading-relaxed rounded-xl shadow-md p-6 md:p-10 flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-10 max-w-5xl mx-auto">
-          <IntroText />
-        </div>
+        <div
+          className="relative bg-cover bg-center rounded-xl shadow-md overflow-hidden max-w-xl mx-auto h-auto min-h-[150px]"
+          style={{ backgroundImage: `url(${introImage})` }}
+        ></div>
       </div>
     </section>
   );

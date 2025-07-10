@@ -14,8 +14,7 @@ const AboutText: React.FC = () => {
       } px-4`}
     >
       <p className="text-base md:text-lg text-center text-gray-700 leading-relaxed mb-4">
-        I’m Maria Parreira, a software developer based in Porto with roots in
-        Évora, Portugal.
+        I’m Maria Parreira, based in Porto with roots in Évora, Portugal.
       </p>
       <p className="text-base md:text-lg text-center text-gray-700 leading-relaxed">
         If I could fit my personality into a suitcase, it would be packed with
