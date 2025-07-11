@@ -19,7 +19,7 @@ export const skills = [
   { name: "Docker", icon: docker },
   { name: "Spring Boot", icon: sboot },
   { name: "Godot Engine", icon: godot },
-  { name: "WebSocket", icon: null },
+  { name: "WebSocket", icon: godot },
   { name: "SQL", icon: sql },
-  { name: "REST", icon: null },
+  { name: "REST", icon: godot },
 ];

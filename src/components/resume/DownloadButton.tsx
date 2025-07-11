@@ -6,10 +6,10 @@ const DownloadButton: React.FC = () => (
     <a
       href={resume}
       download="Maria_Parreira_CV.pdf"
-      className="flex items-center space-x-3 bg-gradient-to-r from-blue-400 to-pink-300 text-white py-2 px-4 rounded-lg shadow-lg hover:opacity-90 transition duration-300"
+      className="flex items-center space-x-3 bg-rose-300 text-white py-2 px-4 rounded-lg shadow-lg hover:opacity-90 transition duration-300 font-serif"
     >
       <img src={downloadIcon} alt="Download CV" className="w-8 h-8" />
-      <span>Download</span>
+      <span>Download my Resume</span>
     </a>
   </div>
 );

@@ -2,7 +2,7 @@
 
 interface SkillItemProps {
   name: string;
-  icon: string;
+  icon: string | undefined;
   index: number;
   inView: boolean;
 }

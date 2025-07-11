@@ -9,19 +9,13 @@ const Resume: React.FC = () => {
   });
 
   return (
-    <section id="Resume" className="py-16">
+    <section id="Contact" className="py-16 font-serif">
       <h2
-        className={`text-3xl font-bold mb-8 text-center text-gray-800 transition-transform transform hover:scale-105 hover:text-pink-400 ${sectionInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        className={`text-3xl font-bold mb-8 text-center text-gray-800 ${sectionInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         ref={sectionRef}
       >
-        Resume
+        Contacts
       </h2>
-      <p
-        className={`text-center text-lg text-gray-600 mb-6 transition-opacity duration-1000 ${sectionInView ? "opacity-100" : "opacity-0"}`}
-      >
-        For a detailed overview of my professional background, skills, and
-        experiences, click below:
-      </p>
       <DownloadButton />
       <ContactForm />
     </section>

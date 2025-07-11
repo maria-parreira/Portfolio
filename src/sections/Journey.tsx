@@ -19,7 +19,7 @@ const Journey: React.FC = () => {
   });
 
   return (
-    <section id="Journey" className="py-40">
+    <section id="Journey" className="py-20 font-serif">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
           My Journey

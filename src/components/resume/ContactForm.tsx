@@ -41,91 +41,88 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4 transition-opacity duration-1000 opacity-100">
-      <h3 className="text-xl font-semibold text-center mb-4 text-gray-700">
-        Contact Me
+    <div className="max-w-xl mx-auto px-2 text-sm font-light text-rose-500">
+      <h3 className="text-base font-serif font-bold text-center mb-2">
+        Send me a message
       </h3>
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-lg shadow-lg border border-gray-200"
-      >
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="relative">
-            <label
-              htmlFor="subject"
-              className="block text-gray-700 font-medium mb-1"
-            >
+
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label htmlFor="subject" className="text-xs mb-1 block font-serif">
               Subject
             </label>
-            <div className="flex items-center border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-blue-500">
-              <FaPen className="ml-3 text-gray-400" />
+            <div className="flex items-center border border-yellow-200 rounded-md px-2 py-1  bg-white opacity-60">
+              <FaPen className="text-rose-500 mr-2 text-xs font-serif" />
               <input
                 type="text"
                 id="subject"
                 name="subject"
                 value={formState.subject}
                 onChange={handleInputChange}
-                className="w-full p-2 pl-4 border-none focus:outline-none rounded-lg"
-                placeholder="Enter subject"
+                className="w-full text-xs bg-transparent focus:outline-none font-serif"
+                placeholder="Subject"
                 required
               />
             </div>
           </div>
-          <div className="relative">
-            <label
-              htmlFor="email"
-              className="block text-gray-700 font-medium mb-1"
-            >
+
+          <div>
+            <label htmlFor="email" className="text-xs mb-1 block font-serif">
               Email
             </label>
-            <div className="flex items-center border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-blue-500">
-              <FaEnvelope className="ml-3 text-gray-400" />
+            <div className="flex items-center border border-yellow-200 rounded-md px-2 py-1 bg-white opacity-60">
+              <FaEnvelope className="text-rose-400 mr-2 text-xs font-serif" />
               <input
                 type="email"
                 id="email"
                 name="email"
                 value={formState.email}
                 onChange={handleInputChange}
-                className="w-full p-2 pl-4 border-none focus:outline-none rounded-lg"
-                placeholder="Enter your email"
+                className="w-full text-xs bg-transparent focus:outline-none font-serif"
+                placeholder="Email"
                 required
               />
             </div>
           </div>
         </div>
-        <div className="relative mt-6">
-          <label
-            htmlFor="message"
-            className="block text-gray-700 font-medium mb-1"
-          >
+
+        <div>
+          <label htmlFor="message" className="text-xs mb-1 block font-serif">
             Message
           </label>
-          <div className="flex items-start border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-blue-500">
-            <FaUser className="ml-3 mt-2 text-gray-400" />
+          <div className="flex items-start border border-yellow-200 rounded-md px-2 py-1  bg-white opacity-60">
+            <FaUser className="text-rose-400 mr-2 mt-1 text-xs font-serif" />
             <textarea
               id="message"
               name="message"
               value={formState.message}
               onChange={handleInputChange}
-              className="w-full p-2 pl-4 border-none focus:outline-none rounded-lg"
-              rows={4}
-              placeholder="Write your message"
+              className="w-full text-xs bg-transparent focus:outline-none resize-none font-serif"
+              rows={3}
+              placeholder="Your message..."
               required
             />
           </div>
         </div>
-        <div className="text-center mt-6">
+
+        <div className="text-center mt-2">
           <button
             type="submit"
-            className="bg-gradient-to-r from-blue-400 to-pink-300 text-white py-2 px-6 rounded-full shadow-lg hover:opacity-90 transition duration-300"
+            className="bg-rose-400 hover:bg-rose-500 text-white text-xs py-1.5 px-5 rounded-full transition duration-200 font-serif font-bold"
           >
-            Send Message
+            Send
           </button>
         </div>
       </form>
+
       {formStatus && (
         <p
-          className={`mt-4 text-center ${formStatus.includes("successfully") ? "text-green-500" : "text-red-500"}`}
+          className={`mt-3 text-center text-xs ${
+            formStatus.includes("successfully")
+              ? "text-rose-500"
+              : "text-rose-500"
+          }`}
         >
           {formStatus}
         </p>
