@@ -9,7 +9,7 @@ const Resume: React.FC = () => {
   });
 
   return (
-    <section id="Contact" className="py-16 font-serif">
+    <section id="Contact" className="mb-20 py-10 font-serif">
       <h2
         className={`text-3xl font-bold mb-8 text-center text-gray-800 ${sectionInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         ref={sectionRef}

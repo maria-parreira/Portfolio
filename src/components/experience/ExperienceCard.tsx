@@ -1,6 +1,4 @@
-﻿// src/components/Journey/ExperienceCard.tsx
-
-import React from "react";
+﻿import React from "react";
 import { ExperienceItem } from "../../data/experience";
 
 interface Props {
@@ -13,7 +11,7 @@ const ExperienceCard: React.FC<Props> = ({ experience, reverse = false }) => {
     <div
       className={`relative flex flex-col items-start md:flex-row md:items-center ${
         reverse ? "md:flex-row-reverse" : ""
-      } w-full max-w-4xl mx-auto`}
+      } w-full max-w-5xl mx-auto`} // ← AUMENTADO
     >
       {/* Icon */}
       <div
@@ -29,7 +27,7 @@ const ExperienceCard: React.FC<Props> = ({ experience, reverse = false }) => {
       </div>
 
       {/* Content */}
-      <div className="p-4 rounded-lg shadow-md border border-yellow-200 flex-grow max-w-md transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div className="p-4 rounded-lg shadow-md border border-yellow-200 flex-grow w-full transition-transform duration-300 hover:scale-105 hover:shadow-xl">
         <h3 className="font-bold font-serif mb-2 text-rose-500">
           {experience.title}
         </h3>

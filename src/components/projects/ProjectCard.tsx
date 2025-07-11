@@ -11,10 +11,10 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
     <div
       ref={ref}
-      className={`relative group bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-700 ${
+      className={`relative group bg-white/70 shadow-sm border border-gray-200 rounded-md overflow-hidden transform transition-transform duration-700 ${
         inView ? "opacity-100 scale-100" : "opacity-0 scale-90"
       }`}
-      style={{ width: "250px", height: "250px" }}
+      style={{ width: "180px", height: "180px" }} // tamanho reduzido
     >
       <a
         href={project.link}
@@ -28,8 +28,10 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           className="w-full h-full object-cover"
           style={project.customStyles}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white p-4">
-          <span className="text-lg font-semibold">{project.title}</span>
+        <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white px-2 text-sm">
+          <span className="text-xs font-medium text-center leading-tight">
+            {project.title}
+          </span>
         </div>
       </a>
     </div>
