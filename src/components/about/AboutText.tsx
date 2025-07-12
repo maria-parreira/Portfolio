@@ -16,35 +16,18 @@ const AboutText: React.FC = () => {
       </h2>
 
       <p className="text-sm md:text-base font-light text-slate-800 leading-relaxed mb-4 text-justify">
-        If I could fit my personality into a suitcase, it would be packed with{" "}
-        <span className="font-light text-slate-900">
-          sunshine, passport stamps
-        </span>
-        , and probably a few snacks for the road. ✈️🍪 I’m someone who’s always
-        ready for the next adventure — whether it’s exploring a hidden beach,
-        hiking up a trail just to catch the sunset, or saying “yes” to a food I
-        can’t pronounce (but will absolutely try).
+        I’m Maria Parreira, a software developer based in Porto with roots in
+        Évora, Portugal. My journey into development is grounded in curiosity,
+        problem-solving, and a love for building meaningful digital experiences.
       </p>
-
-      <p className="text-sm font-light md:text-base text-slate-800 leading-relaxed mb-4 text-justify">
-        I live for the thrill of discovering{" "}
-        <span className="font-light text-slate-900">
-          new places, new flavors
-        </span>
-        , and even new mosquito bites from my latest camping trip. 🏕️ When I’m
-        not outside trying to convince every stray animal to be my best friend
-        🐶, you’ll probably find me soaking up the sun, laughing with friends,
-        or enjoying a good meal with my family — because yes, food tastes better
-        when you're surrounded by people you love.
-      </p>
-
       <p className="text-sm font-light md:text-base text-slate-800 leading-relaxed text-justify">
-        In short? I’m a mix of{" "}
-        <span className="font-light text-slate-900">
-          curiosity, warmth, and a little bit of chaos
-        </span>{" "}
-        — but the fun kind. Life’s too short not to explore it all… and I fully
-        intend to!
+        If I could fit my personality into a suitcase, it would be packed with
+        sunshine, passport stamps , and probably a few snacks for the road. ✈️🍪
+        I’m someone who’s always ready for the next adventure — whether it’s
+        exploring a hidden beach, hiking up a trail just to catch the sunset, or
+        saying “yes” to a food I can’t pronounce (but will absolutely try). I
+        live for the thrill of discovering new places, new flavors, and even new
+        mosquito bites from my latest camping trip. 🏕️
       </p>
     </div>
   );
