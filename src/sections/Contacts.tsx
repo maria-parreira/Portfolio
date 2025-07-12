@@ -14,10 +14,10 @@ const Contacts: React.FC = () => {
         className={`text-3xl font-bold mb-4 text-center text-gray-800 ${sectionInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         ref={sectionRef}
       >
-        Let's Connect
+        Let's Connect!
       </h2>
       {/* Linha separadora */}
-      <div className="w-24 h-1 bg-stone-200 mx-auto mb-12 rounded-full" />
+      <div className="w-25 h-0.5 bg-stone-200 mx-auto mb-12 rounded-full" />
       <DownloadButton />
       <ContactForm />
     </section>

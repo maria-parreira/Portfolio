@@ -6,18 +6,16 @@ import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Resume from "./sections/Contacts";
 import Footer from "./sections/Footer";
-import Introduction from "./sections/Introduction";
 import "./index.css";
-import bgImage from "./assets/intro/bg_image.jpg";
 
 const App: React.FC = () => {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      className="font-bold font-serif bg-cover bg-center bg-no-repeat bg-fixed bg-rose-200"
+      // style={{ backgroundImage: `url(${bgImage})` }}
     >
       <Header />
-      <main className="container mx-auto p-4 bg-white bg-opacity-50">
+      <main className="font-bold font-serif container mx-auto p-4 bg-white bg-opacity-50">
         <About />
         <Journey />
         <Skills />

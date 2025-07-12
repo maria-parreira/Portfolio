@@ -25,7 +25,7 @@ const Journey: React.FC = () => {
           My Journey
         </h2>
         {/* Linha separadora */}
-        <div className="w-24 h-1 bg-stone-200 mx-auto mb-12 rounded-full" />
+        <div className="w-25 h-0.5 bg-stone-200 mx-auto mb-12 rounded-full" />
         {/* Experiência */}
         <div
           ref={experienceRef}

@@ -33,7 +33,7 @@ const Header: React.FC = () => {
     <header className="text-white py-3 fixed top-0 left-0 right-0 bg-opacity-10 bg-stone-200 backdrop-blur-md z-50">
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo / Título */}
-        <h1 className="flex items-center gap-6 text-xl font-extrabold text-transparent bg-rose-400 bg-clip-text">
+        <h1 className="flex items-center gap-6 text-xl font-bold font-serif text-transparent bg-rose-500 bg-clip-text">
           <span className="whitespace-nowrap">Maria Parreira</span>
           <IntroImage />
         </h1>
