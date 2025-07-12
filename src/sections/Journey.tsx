@@ -21,10 +21,11 @@ const Journey: React.FC = () => {
   return (
     <section id="Journey" className="py-20 font-serif">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
+        <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">
           My Journey
         </h2>
-
+        {/* Linha separadora */}
+        <div className="w-24 h-1 bg-stone-200 mx-auto mb-12 rounded-full" />
         {/* Experiência */}
         <div
           ref={experienceRef}

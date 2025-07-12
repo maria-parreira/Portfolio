@@ -12,7 +12,7 @@ const AboutText: React.FC = () => {
       } px-6 max-w-4xl mx-auto font-serif`}
     >
       <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 text-center md:text-left leading-snug tracking-tight">
-        I’m Maria Parreira, based in Porto with roots in Évora, Portugal.
+        Hello there!
       </h2>
 
       <p className="text-sm md:text-base text-slate-800 leading-relaxed mb-4 text-justify">

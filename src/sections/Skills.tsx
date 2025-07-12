@@ -10,10 +10,12 @@ const Skills: React.FC = () => {
   });
 
   return (
-    <section id="Skills" className="py-20 font-serif">
-      <h2 className="text-3xl font-bold mb-20 text-center text-gray-800">
-        Some of my skills
+    <section id="Skills" className="mb-52 py-20 font-serif">
+      <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">
+        My Skills
       </h2>
+      {/* Linha separadora */}
+      <div className="w-24 h-1 bg-stone-200 mx-auto mb-12 rounded-full" />
       <ul
         ref={skillsRef}
         className={`flex flex-wrap justify-center gap-6 transform transition-opacity duration-1000 ease-out ${

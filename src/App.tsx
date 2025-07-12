@@ -4,7 +4,7 @@ import About from "./sections/About";
 import Journey from "./sections/Journey";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
-import Resume from "./sections/Resume";
+import Resume from "./sections/Contacts";
 import Footer from "./sections/Footer";
 import Introduction from "./sections/Introduction";
 import "./index.css";
@@ -18,7 +18,6 @@ const App: React.FC = () => {
     >
       <Header />
       <main className="container mx-auto p-4 bg-white bg-opacity-50">
-        <Introduction />
         <About />
         <Journey />
         <Skills />
