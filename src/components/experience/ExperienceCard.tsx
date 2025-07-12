@@ -27,7 +27,7 @@ const ExperienceCard: React.FC<Props> = ({ experience, reverse = false }) => {
       </div>
 
       {/* Content */}
-      <div className="p-4 rounded-lg shadow-md border border-yellow-200 flex-grow w-full transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div className="p-4 rounded-lg shadow-md border border-white flex-grow w-full transition-transform duration-300 hover:scale-105 hover:shadow-xl">
         <h3 className="font-bold font-serif mb-2 text-rose-500">
           {experience.title}
         </h3>

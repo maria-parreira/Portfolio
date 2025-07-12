@@ -11,7 +11,7 @@ const About: React.FC = () => {
           About me
         </h2>
         {/* Linha separadora */}
-        <div className="w-25 h-0.5 bg-stone-200 mx-auto mb-12 rounded-full" />
+        <div className="w-25 h-0.5 bg-rose-200 mx-auto mb-12 rounded-full" />
 
         <div className="flex flex-col items-center justify-center space-y-8">
           <AboutGallery />

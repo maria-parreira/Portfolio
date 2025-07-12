@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
         My Skills
       </h2>
       {/* Linha separadora */}
-      <div className="w-25 h-0.5 bg-stone-200 mx-auto mb-12 rounded-full" />
+      <div className="w-25 h-0.5  bg-rose-200 mx-auto mb-12 rounded-full" />
       <ul
         ref={skillsRef}
         className={`flex flex-wrap justify-center gap-6 transform transition-opacity duration-1000 ease-out ${
