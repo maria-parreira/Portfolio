@@ -1,16 +1,28 @@
-﻿import downloadIcon from "../../assets/cv/cvicon.jpg";
+﻿import React, { useState } from "react";
+import downloadIcon from "../../assets/cv/cvicon.jpg";
 
-const DownloadButton: React.FC = () => (
-  <div className="flex justify-center mb-8 transition-transform duration-1000 scale-100">
-    <a
-      href="/Portfolio/public/CV.pdf"
-      download="Maria_Parreira_CV.pdf"
-      className="flex items-center space-x-3 bg-gradient-to-r from-blue-400 to-pink-300 text-white py-2 px-4 rounded-lg shadow-lg hover:opacity-90 transition duration-300"
-    >
-      <img src={downloadIcon} alt="Download CV" className="w-8 h-8" />
-      <span>Download</span>
-    </a>
-  </div>
-);
+const DownloadButton: React.FC = () => {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <div className="flex justify-center mb-8 relative">
+      <a
+        href="/Portfolio/cv/Maria_Parreira_CV.pdf"
+        download="Maria_Parreira_CV.pdf"
+        className="p-2"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        <img src={downloadIcon} alt="Download CV" className="w-16 h-16" />
+      </a>
+
+      {hovered && (
+        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-yellow-100 text-gray-700 text-xs rounded px-2 py-1 pointer-events-none">
+          Download my Resume
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default DownloadButton;
