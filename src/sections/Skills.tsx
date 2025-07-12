@@ -1,36 +1,50 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import SkillItem from "../components/skills/SkillItem";
 import { skills } from "../data/skills";
+import SkillItem from "../components/skills/SkillItem";
 
 const Skills: React.FC = () => {
   const { ref: skillsRef, inView: skillsInView } = useInView({
     triggerOnce: false,
-    threshold: 0.5,
+    threshold: 0.3,
   });
 
   return (
-    <section id="Skills" className="mb-52 py-20 font-serif">
+    <section id="Skills" className="py-20 font-serif">
       <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">
         My Skills
       </h2>
-      {/* Linha separadora */}
-      <div className="w-25 h-0.5  bg-rose-200 mx-auto mb-12 rounded-full" />
-      <ul
+      <div className="w-24 h-0.5 bg-rose-300 mx-auto mb-12 rounded-full" />
+
+      <div
         ref={skillsRef}
-        className={`flex flex-wrap justify-center gap-6 transform transition-opacity duration-1000 ease-out ${
+        className={`transition-opacity duration-1000 ease-out ${
           skillsInView ? "opacity-100" : "opacity-0"
-        }`}
+        } grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto`}
       >
-        {skills.map((skill, index) => (
-          <SkillItem
-            key={index}
-            {...skill}
-            index={index}
-            inView={skillsInView}
-          />
+        {skills.map((category, idx) => (
+          <div
+            key={idx}
+            className="bg-white border border-yellow-200 rounded-lg p-6 shadow-md"
+          >
+            <h3 className="text-lg font-bold text-rose-500 mb-4 text-center">
+              {category.category}
+            </h3>
+
+            <ul className="flex flex-wrap justify-center gap-6">
+              {category.items.map((skill, index) => (
+                <SkillItem
+                  key={index}
+                  name={skill.name}
+                  icon={skill.icon}
+                  index={index}
+                  inView={skillsInView}
+                />
+              ))}
+            </ul>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 };

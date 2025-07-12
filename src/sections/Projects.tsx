@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
   });
 
   return (
-    <section id="Projects" className="py-20 font-serif">
+    <section id="Projects" className="py-20 mb-10 font-serif">
       <h2
         ref={sectionRef}
         className={`text-3xl font-bold mb-4 text-center text-gray-800 ${

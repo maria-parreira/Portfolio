@@ -9,7 +9,7 @@ const Contacts: React.FC = () => {
   });
 
   return (
-    <section id="Contact" className="mb-20 py-60 font-serif">
+    <section id="Contacts" className="mb-20 py-0 font-serif">
       <h2
         className={`text-3xl font-bold mb-4 text-center text-gray-800 ${sectionInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         ref={sectionRef}
