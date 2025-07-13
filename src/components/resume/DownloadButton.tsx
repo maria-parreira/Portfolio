@@ -1,5 +1,5 @@
 ﻿import React, { useState } from "react";
-import downloadIcon from "../../assets/cv/cvicon.jpg";
+import downloadIcon from "../../assets/cv/cv-icon.png";
 
 const DownloadButton: React.FC = () => {
   const [hovered, setHovered] = useState(false);
@@ -7,13 +7,13 @@ const DownloadButton: React.FC = () => {
   return (
     <div className="flex justify-center mb-8 relative">
       <a
-        href="/Portfolio/cv/Maria_Parreira_CV.pdf"
+        href="/Portfolio/public/CV.pdf"
         download="Maria_Parreira_CV.pdf"
         className="p-2"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <img src={downloadIcon} alt="Download CV" className="w-16 h-16" />
+        <img src={downloadIcon} alt="Download CV" className="w-20 h-20" />
       </a>
 
       {hovered && (

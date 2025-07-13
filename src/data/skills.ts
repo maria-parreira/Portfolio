@@ -8,7 +8,25 @@ import kn from "../assets/projects/kn.png";
 import sboot from "../assets/projects/sboot.png";
 import docker from "../assets/projects/docker.png";
 import godot from "../assets/projects/godot.png";
-import sql from "../assets/projects/sql.png";
+import agileIcon from "../assets/projects/AGILE.png"
+import confluenceIcon from "../assets/projects/CONFLUENCE.png"
+import figmaIcon from "../assets/projects/FIGMA.png"
+import githubIcon from "../assets/projects/github.png"
+import mySQLIcon from "../assets/projects/MYSQL.png"
+import pythonIcon from "../assets/projects/PYTHON.png"
+import htmlIcon from "../assets/projects/HTML.png"
+import websocketIcon from "../assets/projects/WEBSOCKET.png"
+import giteaIcon from "../assets/projects/GITEA.png"
+import umlIcon from "../assets/projects/UML.png"
+import mongoIcon from "../assets/projects/mongodb.png"
+import shellIcon from "../assets/projects/SHELL.svg"
+import typescript from "../assets/projects/TS.png"
+import brunoIcon from "../assets/projects/bruno.png"
+import postmanIcon from "../assets/projects/postman.png"
+import junit5 from "../assets/projects/junit5.png"
+import mock from "../assets/projects/mock2.png"
+import tcpudp from "../assets/projects/images-3.png"
+
 
 export const skills = [
   {
@@ -16,9 +34,10 @@ export const skills = [
     items: [
       { name: "Java", icon: javaIcon },
       { name: "JavaScript", icon: javascriptIcon },
-      { name: "TypeScript", icon: javascriptIcon }, // Ideal: tsIcon
-      { name: "Python", icon: javascriptIcon },      // Ideal: pythonIcon
-      { name: "GDScript", icon: godot }
+      { name: "TypeScript", icon: typescript }, // Ideal: tsIcon
+      { name: "Python", icon: pythonIcon },      // Ideal: pythonIcon
+      { name: "GDScript", icon: godot },
+      { name: "Shell", icon: shellIcon },
     ],
   },
   {
@@ -26,34 +45,47 @@ export const skills = [
     items: [
       { name: "React", icon: reactIcon },
       { name: "Tailwind CSS", icon: tw },
-      { name: "HTML", icon: sboot },              // Ideal: htmlIcon
-      { name: "WebSocket", icon: sboot }          // Ideal: websocketIcon
+      { name: "HTML", icon: htmlIcon },              
+      { name: "Spring", icon: sboot } 
     ],
   },
   {
     category: "Operating Systems & Tools",
     items: [
-      { name: "Git", icon: kn },                  // Ideal: gitIcon
-      { name: "Agile Scrum", icon: kn },          // Ideal: scrumIcon
-      { name: "Gitea", icon: docker },            // Ideal: giteaIcon
-      { name: "GitHub", icon: jk },               // Ideal: githubIcon
+      { name: "Git", icon: kn },               
+      { name: "Scrum", icon: agileIcon },          
+      { name: "Gitea", icon: giteaIcon },           
+      { name: "GitHub", icon: githubIcon },         
       { name: "Jenkins", icon: jk },
-      { name: "Godot Engine 3.6", icon: godot }
+      { name: "Godot Engine 3.6", icon: godot },
+      { name: "Docker", icon: docker },
+      { name: "WebSocket", icon: websocketIcon },
+      { name: "TCP & UDP", icon: tcpudp },
+      
     ],
   },
   {
     category: "Documentation & Design",
     items: [
-      { name: "UML", icon: godot },
-      { name: "Confluence", icon: godot },
-      { name: "Figma", icon: godot }              // Ideal: figmaIcon
+      { name: "UML", icon: umlIcon },
+      { name: "Confluence", icon: confluenceIcon },
+      { name: "Figma", icon: figmaIcon }              // Ideal: figmaIcon
     ],
   },
   {
     category: "Databases",
     items: [
-      { name: "MySQL", icon: sql },               // Ideal: mysqlIcon
-      { name: "MongoDB", icon: sql }              // Ideal: mongodbIcon
+      { name: "MySQL", icon: mySQLIcon },               // Ideal: mysqlIcon
+      { name: "MongoDB", icon: mongoIcon }              // Ideal: mongodbIcon
+    ],
+  },
+  {
+    category: "Testing frameworks",
+    items: [
+      { name: "JUnit", icon: junit5 },               // Ideal: mysqlIcon
+      { name: "Postman", icon: postmanIcon },
+      { name: "Bruno", icon: brunoIcon },
+      { name: "Mockito", icon: mock },            // Ideal: mongodbIcon
     ],
   },
 ];
