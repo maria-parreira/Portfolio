@@ -6,11 +6,15 @@ import SkillItem from "../components/skills/SkillItem";
 const Skills: React.FC = () => {
   const { ref: skillsRef, inView: skillsInView } = useInView({
     triggerOnce: false,
-    threshold: 0.3,
+    threshold: 0.1,
   });
 
+  // Fallback para ecrãs pequenos: assume sempre visível
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const showContent = isMobile || skillsInView;
+
   return (
-    <section id="Skills" className="py-20 font-serif">
+    <section id="Skills" className="py-20 font-serif bg-white">
       <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">
         My Skills
       </h2>
@@ -18,9 +22,9 @@ const Skills: React.FC = () => {
 
       <div
         ref={skillsRef}
-        className={`transition-opacity duration-1000 ease-out ${
-          skillsInView ? "opacity-100" : "opacity-0"
-        } grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto`}
+        className={`grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto transition-opacity duration-1000 ease-out ${
+          showContent ? "opacity-100" : "opacity-0"
+        }`}
       >
         {skills.map((category, idx) => (
           <div
@@ -38,7 +42,7 @@ const Skills: React.FC = () => {
                   name={skill.name}
                   icon={skill.icon}
                   index={index}
-                  inView={skillsInView}
+                  inView={showContent}
                 />
               ))}
             </ul>
