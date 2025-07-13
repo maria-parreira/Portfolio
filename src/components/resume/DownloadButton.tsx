@@ -7,7 +7,7 @@ const DownloadButton: React.FC = () => {
   return (
     <div className="flex justify-center mb-8 relative">
       <a
-        href="/Portfolio/public/CV.pdf"
+        href="/Portfolio/CV.pdf"
         download="Maria_Parreira_CV.pdf"
         className="p-2"
         onMouseEnter={() => setHovered(true)}
