@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { skills } from "../data/skills";
 import SkillItem from "../components/skills/SkillItem";
 
 const Skills: React.FC = () => {
-  const { ref: skillsRef, inView: skillsInView } = useInView({
+  const { ref: skillsRef, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
   });
 
-  // Fallback para ecrãs pequenos: assume sempre visível
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-  const showContent = isMobile || skillsInView;
+  const [hasEnteredView, setHasEnteredView] = useState(false);
+
+  // Quando inView for true pela primeira vez, ativa visibilidade permanente
+  useEffect(() => {
+    if (inView) {
+      setHasEnteredView(true);
+    }
+  }, [inView]);
+
+  // Para garantir visibilidade mesmo em devices onde o observer falha
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+
+  const showContent = hasEnteredView || isMobile;
 
   return (
     <section id="Skills" className="py-20 font-serif">
