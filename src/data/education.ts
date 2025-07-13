@@ -19,7 +19,7 @@ export const educationList: EducationItem[] = [
       'Delivered features in sprint cycles and participated in peer reviews.',
       'Gained experience working under pressure and collaborating with colleagues from diverse backgrounds.',
       'Acquired a strong foundation to face real-world development challenges and tight deadlines.',
-      'Built a modular and scalable system for house management. Check it out: [here](https://github.com/maria-parreira/smarthome-switch-dev)'
+      'Built a modular and scalable system for house management. Check it out [here](https://github.com/maria-parreira/smarthome-switch-dev)'
     ],
     icon: postgraduateIcon,
   },
