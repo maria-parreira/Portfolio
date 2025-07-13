@@ -2,29 +2,35 @@
 import realstateIcon from '../assets/projects/realstate.png';
 
 export interface ExperienceItem {
-    title: string;
-    company: string;
-    duration: string;
-    description: string;
-    icon:string;
+  title: string;
+  company: string;
+  duration: string;
+  description: string[];
+  icon: string;
+}
+
+export const experiences: ExperienceItem[] = [
+  {
+    title: 'Software Developer - Game',
+    company: 'VertsaPlay',
+    duration: 'Jan 2025 - Present',
+    description: [
+      'Contribute to the development of online games, from game logic to visual implementation.',
+      'Build modular and optimized systems with a strong focus on performance and user experience.',
+      'Develop internal tools to support the team and streamline workflow.',
+    ],
+    icon: gameIcon,
+  },
+  {
+    title: 'Full Stack Developer',
+    company: 'VeriCasa',
+    duration: 'Sep 2024 – Jan 2025',
+    description: [
+      'Worked at a real estate startup focused on AI-powered automation for property transactions.',
+      'Built dynamic web forms to collect data for report generation.',
+      'Developed asynchronous backend systems for task processing.',
+      'Contributed to features that automatically generate contracts, reports, and signature documents from real estate data.'
+    ],
+    icon: realstateIcon,
   }
-  
-  export const experiences: ExperienceItem[] = [
-    {
-      title: 'Software Developer - Game',
-      company: 'VertsaPlay',
-      duration: 'Jan 2025 - Present',
-      description:
-        'Currently working in the game development industry. I contribute to create online games from the game logic to the visual side. My responsibilities are developing modular, optimized systems with a focus on performance and user experience. I also contribute to develop internal tools to support the design team and improve workflow. I work primarily with Godot Engine, JavaScript and Python.',
-      icon: gameIcon,
-    },
-    {
-      title: 'Full Stack Developer',
-      company: 'VeriCasa',
-      duration: 'Set 2024 – Jan 2025',
-      description:
-        'Worked as a fullstack developer at a real estate startup. I contributed to the development of an AI-driven platform designed to analyze real estate documents and automatically generate contracts, reports, and signature sheets related to property transactions.On the frontend, I was responsible for building dynamic web forms used to collect data for report generation, using React, TypeScript, and Tailwind CSS. On the backend, I contributed to the development of an asynchronous processing system in Python, built around RabbitMQ, to automate task handling.',
-      icon: realstateIcon,
-    },
-  ];
-  
+];

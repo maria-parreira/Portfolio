@@ -37,9 +37,11 @@ const ExperienceCard: React.FC<Props> = ({ experience, reverse = false }) => {
         <p className="font-light font-serif text-gray-500 mb-1 text-sm">
           {experience.duration}
         </p>
-        <p className="font-light font-serif text-gray-700 text-sm leading-relaxed text-justify">
-          {experience.description}
-        </p>
+        <ul className="font-light text-justify text-xs font-serif list-disc list-inside space-y-2 text-gray-700">
+          {experience.description.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

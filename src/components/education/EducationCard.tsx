@@ -38,9 +38,36 @@ const EducationCard: React.FC<Props> = ({ edu, reverse = false }) => {
         <p className="font-light font-serif text-gray-500 mb-1 text-sm">
           {edu.duration}
         </p>
-        <p className="font-light font-serif text-gray-700 text-sm leading-relaxed text-justify">
-          {edu.description}
-        </p>
+        <ul className="font-light text-justify text-xs font-serif list-disc list-inside space-y-2 text-gray-700">
+          {edu.description.map((point, idx) => {
+            // Verifica se o ponto tem link markdown tipo [text](url)
+            const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/;
+            const match = point.match(markdownLinkRegex);
+
+            if (match) {
+              const [fullMatch, linkText, url] = match;
+              const before = point.split(fullMatch)[0];
+              const after = point.split(fullMatch)[1];
+
+              return (
+                <li key={idx}>
+                  {before}
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-rose-500 underline hover:text-rose-700 transition"
+                  >
+                    {linkText}
+                  </a>
+                  {after}
+                </li>
+              );
+            }
+
+            return <li key={idx}>{point}</li>;
+          })}
+        </ul>
       </div>
     </div>
   );
