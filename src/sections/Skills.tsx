@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
   const showContent = isMobile || skillsInView;
 
   return (
-    <section id="Skills" className="py-20 font-serif bg-white">
+    <section id="Skills" className="py-20 font-serif">
       <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">
         My Skills
       </h2>
