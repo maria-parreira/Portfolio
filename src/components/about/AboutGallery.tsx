@@ -14,7 +14,12 @@ const AboutGallery: React.FC = () => {
         }`}
       >
         {aboutImages.map((img, idx) => (
-          <AboutImage key={idx} src={img} alt={`Maria Parreira ${idx + 1}`} />
+          <AboutImage
+            key={idx}
+            src={img.src}
+            alt={`Maria Parreira ${idx + 1}`}
+            location={img.location}
+          />
         ))}
       </div>
     </div>
