@@ -1,20 +1,16 @@
-﻿// src/components/About/AboutGallery.tsx
-
-import { useInView } from "react-intersection-observer";
+﻿import { useInView } from "react-intersection-observer";
 import { aboutImages } from "../../data/aboutImages";
 import AboutImage from "./AboutImage";
 
 const AboutGallery: React.FC = () => {
-  const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: false });
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-  const show = isMobile || inView;
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
 
   return (
     <div className="max-w-5xl mx-auto">
       <div
         ref={ref}
         className={`grid grid-cols-2 md:grid-cols-4 gap-4 items-center justify-center transition-opacity duration-1000 ${
-          show ? "opacity-100" : "opacity-0"
+          inView ? "opacity-100" : "opacity-0"
         }`}
       >
         {aboutImages.map((img, idx) => (

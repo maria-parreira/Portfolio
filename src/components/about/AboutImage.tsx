@@ -1,6 +1,4 @@
-﻿// src/components/About/AboutImage.tsx
-
-interface AboutImageProps {
+﻿interface AboutImageProps {
   src: string;
   alt: string;
 }
