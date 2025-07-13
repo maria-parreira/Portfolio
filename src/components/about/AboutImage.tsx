@@ -8,7 +8,8 @@ const AboutImage: React.FC<AboutImageProps> = ({ src, alt }) => (
     <img
       src={src}
       alt={alt}
-      className="rounded-2xl w-full max-w-[140px] sm:max-w-[160px] md:max-w-[200px] h-auto object-cover border-2 border-rose-400 shadow-md transition-transform duration-500 hover:scale-105"
+      className="rounded-2xl max-w-[140px] sm:max-w-[160px] md:max-w-[200px] h-auto object-cover border-2 border-rose-400 shadow-md transition-transform duration-500 hover:scale-105 min-w-[120px]"
+      style={{ minHeight: "120px" }}
     />
   </div>
 );
