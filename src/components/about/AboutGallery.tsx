@@ -9,7 +9,7 @@ const AboutGallery: React.FC = () => {
     <div className="max-w-5xl mx-auto">
       <div
         ref={ref}
-        className={`grid grid-cols-1 md:grid-cols-4 gap-4 items-center justify-center transition-opacity duration-1000 ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-center justify-center transition-opacity duration-1000 ${
           inView ? "opacity-100" : "opacity-0"
         }`}
       >
